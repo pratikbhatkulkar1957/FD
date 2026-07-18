@@ -1,0 +1,568 @@
+{
+  "bank_slug": "indusind",
+  "bank_name": "IndusInd Bank",
+  "scraped_at": "2026-07-18T07:01:31.158927+00:00",
+  "error": null,
+  "rates": [
+    {
+      "fd_type": "callable",
+      "tenure_label": "7 days to 30 days",
+      "tenure_min_days": 7,
+      "tenure_max_days": 30,
+      "deposit_slab": "<3 crore",
+      "sort_order": 1,
+      "rate_percent": "3.25",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "7 days to 30 days",
+      "tenure_min_days": 7,
+      "tenure_max_days": 30,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 1,
+      "rate_percent": "4.50",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "31 days to 45 days",
+      "tenure_min_days": 31,
+      "tenure_max_days": 45,
+      "deposit_slab": "<3 crore",
+      "sort_order": 2,
+      "rate_percent": "3.50",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "31 days to 45 days",
+      "tenure_min_days": 31,
+      "tenure_max_days": 45,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 2,
+      "rate_percent": "4.95",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "46 days to 60 days",
+      "tenure_min_days": 46,
+      "tenure_max_days": 60,
+      "deposit_slab": "<3 crore",
+      "sort_order": 3,
+      "rate_percent": "4.50",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "46 days to 60 days",
+      "tenure_min_days": 46,
+      "tenure_max_days": 60,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 3,
+      "rate_percent": "5.45",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "61 days to 90 days",
+      "tenure_min_days": 61,
+      "tenure_max_days": 90,
+      "deposit_slab": "<3 crore",
+      "sort_order": 4,
+      "rate_percent": "4.75",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "61 days to 90 days",
+      "tenure_min_days": 61,
+      "tenure_max_days": 90,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 4,
+      "rate_percent": "5.70",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "91 days to 180 days",
+      "tenure_min_days": 91,
+      "tenure_max_days": 180,
+      "deposit_slab": "<3 crore",
+      "sort_order": 5,
+      "rate_percent": "5.00",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "91 days to 180 days",
+      "tenure_min_days": 91,
+      "tenure_max_days": 180,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 5,
+      "rate_percent": "5.95",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "181 days to 210 days",
+      "tenure_min_days": 181,
+      "tenure_max_days": 210,
+      "deposit_slab": "<3 crore",
+      "sort_order": 6,
+      "rate_percent": "5.75",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "181 days to 210 days",
+      "tenure_min_days": 181,
+      "tenure_max_days": 210,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 6,
+      "rate_percent": "6.10",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "211 days to 269 days",
+      "tenure_min_days": 211,
+      "tenure_max_days": 269,
+      "deposit_slab": "<3 crore",
+      "sort_order": 7,
+      "rate_percent": "6.00",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "270 days to 364 days",
+      "tenure_min_days": 270,
+      "tenure_max_days": 364,
+      "deposit_slab": "<3 crore",
+      "sort_order": 8,
+      "rate_percent": "6.25",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "270 days to 364 days",
+      "tenure_min_days": 270,
+      "tenure_max_days": 364,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 8,
+      "rate_percent": "6.20",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "1 Year to below 1 Year 6 Month",
+      "tenure_min_days": 365,
+      "tenure_max_days": 547,
+      "deposit_slab": "<3 crore",
+      "sort_order": 9,
+      "rate_percent": "6.75",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "1 Year to below 1 Year 6 Month",
+      "tenure_min_days": 365,
+      "tenure_max_days": 547,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 9,
+      "rate_percent": "6.55",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "1 Year 6 months to below 1 Year 7 months",
+      "tenure_min_days": 548,
+      "tenure_max_days": 577,
+      "deposit_slab": "<3 crore",
+      "sort_order": 10,
+      "rate_percent": "6.90",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "1 Year 7 months to below 2 Years",
+      "tenure_min_days": 578,
+      "tenure_max_days": 729,
+      "deposit_slab": "<3 crore",
+      "sort_order": 11,
+      "rate_percent": "6.90",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "2 Years to 3 Years",
+      "tenure_min_days": 730,
+      "tenure_max_days": 1095,
+      "deposit_slab": "<3 crore",
+      "sort_order": 12,
+      "rate_percent": "7.00",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "2 Years to 3 Years",
+      "tenure_min_days": 730,
+      "tenure_max_days": 1095,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 12,
+      "rate_percent": "6.75",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "Above 3 Years up to below 61 Months",
+      "tenure_min_days": 1096,
+      "tenure_max_days": 1856,
+      "deposit_slab": "<3 crore",
+      "sort_order": 13,
+      "rate_percent": "6.65",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "Above 3 Years up to below 61 Months",
+      "tenure_min_days": 1096,
+      "tenure_max_days": 1856,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 13,
+      "rate_percent": "6.45",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "61 Months and above",
+      "tenure_min_days": 1857,
+      "tenure_max_days": 99999,
+      "deposit_slab": "<3 crore",
+      "sort_order": 14,
+      "rate_percent": "6.50",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "61 Months and above",
+      "tenure_min_days": 1857,
+      "tenure_max_days": 99999,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 14,
+      "rate_percent": "6.35",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "7 days to 14 days",
+      "tenure_min_days": 7,
+      "tenure_max_days": 14,
+      "deposit_slab": "<3 crore",
+      "sort_order": 15,
+      "rate_percent": "4.50",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "7 days to 14 days",
+      "tenure_min_days": 7,
+      "tenure_max_days": 14,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 15,
+      "rate_percent": "4.50",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "15 days to 30 days",
+      "tenure_min_days": 15,
+      "tenure_max_days": 30,
+      "deposit_slab": "<3 crore",
+      "sort_order": 16,
+      "rate_percent": "4.60",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "15 days to 30 days",
+      "tenure_min_days": 15,
+      "tenure_max_days": 30,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 16,
+      "rate_percent": "4.60",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "31 days to 45 days",
+      "tenure_min_days": 31,
+      "tenure_max_days": 45,
+      "deposit_slab": "<3 crore",
+      "sort_order": 17,
+      "rate_percent": "5.05",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "31 days to 45 days",
+      "tenure_min_days": 31,
+      "tenure_max_days": 45,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 17,
+      "rate_percent": "5.05",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "46 days to 60 days",
+      "tenure_min_days": 46,
+      "tenure_max_days": 60,
+      "deposit_slab": "<3 crore",
+      "sort_order": 18,
+      "rate_percent": "5.55",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "46 days to 60 days",
+      "tenure_min_days": 46,
+      "tenure_max_days": 60,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 18,
+      "rate_percent": "5.55",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "61 days to 90 days",
+      "tenure_min_days": 61,
+      "tenure_max_days": 90,
+      "deposit_slab": "<3 crore",
+      "sort_order": 19,
+      "rate_percent": "5.80",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "61 days to 90 days",
+      "tenure_min_days": 61,
+      "tenure_max_days": 90,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 19,
+      "rate_percent": "5.80",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "91 days to 120 days",
+      "tenure_min_days": 91,
+      "tenure_max_days": 120,
+      "deposit_slab": "<3 crore",
+      "sort_order": 20,
+      "rate_percent": "5.95",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "91 days to 120 days",
+      "tenure_min_days": 91,
+      "tenure_max_days": 120,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 20,
+      "rate_percent": "5.90",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "121 days to 180 days",
+      "tenure_min_days": 121,
+      "tenure_max_days": 180,
+      "deposit_slab": "<3 crore",
+      "sort_order": 21,
+      "rate_percent": "6.05",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "121 days to 180 days",
+      "tenure_min_days": 121,
+      "tenure_max_days": 180,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 21,
+      "rate_percent": "6.05",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "181 days to 210 days",
+      "tenure_min_days": 181,
+      "tenure_max_days": 210,
+      "deposit_slab": "<3 crore",
+      "sort_order": 22,
+      "rate_percent": "6.20",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "181 days to 210 days",
+      "tenure_min_days": 181,
+      "tenure_max_days": 210,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 22,
+      "rate_percent": "6.20",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "211 days to 269 days",
+      "tenure_min_days": 211,
+      "tenure_max_days": 269,
+      "deposit_slab": "<3 crore",
+      "sort_order": 23,
+      "rate_percent": "6.30",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "270 days to 354 days",
+      "tenure_min_days": 270,
+      "tenure_max_days": 354,
+      "deposit_slab": "<3 crore",
+      "sort_order": 24,
+      "rate_percent": "6.45",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "270 days to 354 days",
+      "tenure_min_days": 270,
+      "tenure_max_days": 354,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 24,
+      "rate_percent": "6.30",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "355 days to 364 days",
+      "tenure_min_days": 355,
+      "tenure_max_days": 364,
+      "deposit_slab": "<3 crore",
+      "sort_order": 25,
+      "rate_percent": "6.60",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "355 days to 364 days",
+      "tenure_min_days": 355,
+      "tenure_max_days": 364,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 25,
+      "rate_percent": "6.40",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "1 year to below 1 year 1 month",
+      "tenure_min_days": 365,
+      "tenure_max_days": 395,
+      "deposit_slab": "<3 crore",
+      "sort_order": 26,
+      "rate_percent": "6.85",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "1 year to below 1 year 1 month",
+      "tenure_min_days": 365,
+      "tenure_max_days": 395,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 26,
+      "rate_percent": "6.65",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "1 year 1 month to below 1 year 6 months",
+      "tenure_min_days": 396,
+      "tenure_max_days": 547,
+      "deposit_slab": "<3 crore",
+      "sort_order": 27,
+      "rate_percent": "6.80",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "1 year 6 months to below 1 Year 7 months",
+      "tenure_min_days": 548,
+      "tenure_max_days": 577,
+      "deposit_slab": "<3 crore",
+      "sort_order": 28,
+      "rate_percent": "7.00",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "1 Year 7 months to 3 Years",
+      "tenure_min_days": 578,
+      "tenure_max_days": 1095,
+      "deposit_slab": "<3 crore",
+      "sort_order": 29,
+      "rate_percent": "6.95",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "1 Year 7 months to 3 Years",
+      "tenure_min_days": 578,
+      "tenure_max_days": 1095,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 29,
+      "rate_percent": "6.85",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "Above 3 years to below 61 months",
+      "tenure_min_days": 1096,
+      "tenure_max_days": 1856,
+      "deposit_slab": "<3 crore",
+      "sort_order": 30,
+      "rate_percent": "6.70",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "Above 3 years to below 61 months",
+      "tenure_min_days": 1096,
+      "tenure_max_days": 1856,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 30,
+      "rate_percent": "6.55",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "61 months and above",
+      "tenure_min_days": 1857,
+      "tenure_max_days": 99999,
+      "deposit_slab": "<3 crore",
+      "sort_order": 31,
+      "rate_percent": "6.55",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "61 months and above",
+      "tenure_min_days": 1857,
+      "tenure_max_days": 99999,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 31,
+      "rate_percent": "6.45",
+      "source_url": "https://www.indusind.bank.in/in/en/personal/rates.html"
+    }
+  ]
+}

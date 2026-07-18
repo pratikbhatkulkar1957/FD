@@ -1,0 +1,64 @@
+{
+  "scraped_at": "2026-07-18T07:01:44.442584+00:00",
+  "session_folder": "2026-07-18_07-00-38",
+  "banks": [
+    {
+      "bank_slug": "yes_bank",
+      "bank_name": "Yes Bank",
+      "points_seen": 56,
+      "changed_points": 56,
+      "error": null
+    },
+    {
+      "bank_slug": "hdfc",
+      "bank_name": "HDFC Bank",
+      "points_seen": 40,
+      "changed_points": 40,
+      "error": null
+    },
+    {
+      "bank_slug": "cub",
+      "bank_name": "City Union Bank",
+      "points_seen": 48,
+      "changed_points": 48,
+      "error": null
+    },
+    {
+      "bank_slug": "axis",
+      "bank_name": "Axis Bank",
+      "points_seen": 52,
+      "changed_points": 52,
+      "error": null
+    },
+    {
+      "bank_slug": "idfc",
+      "bank_name": "IDFC First Bank",
+      "points_seen": 45,
+      "changed_points": 45,
+      "error": null
+    },
+    {
+      "bank_slug": "indusind",
+      "bank_name": "IndusInd Bank",
+      "points_seen": 56,
+      "changed_points": 56,
+      "error": null
+    },
+    {
+      "bank_slug": "icici",
+      "bank_name": "ICICI Bank",
+      "points_seen": 56,
+      "changed_points": 56,
+      "error": null
+    },
+    {
+      "bank_slug": "sbi",
+      "bank_name": "State Bank of India",
+      "points_seen": 10,
+      "changed_points": 10,
+      "error": null
+    }
+  ],
+  "success_count": 8,
+  "failed_count": 0
+}

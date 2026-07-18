@@ -1,0 +1,458 @@
+{
+  "bank_slug": "idfc",
+  "bank_name": "IDFC First Bank",
+  "scraped_at": "2026-07-18T07:01:22.453068+00:00",
+  "error": null,
+  "rates": [
+    {
+      "fd_type": "callable",
+      "tenure_label": "7 days – 14 days",
+      "tenure_min_days": 7,
+      "tenure_max_days": 14,
+      "deposit_slab": "<3 crore",
+      "sort_order": 1,
+      "rate_percent": "3.25",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "7 days – 14 days",
+      "tenure_min_days": 7,
+      "tenure_max_days": 14,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 1,
+      "rate_percent": "4.75",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "15 days – 29 days",
+      "tenure_min_days": 15,
+      "tenure_max_days": 29,
+      "deposit_slab": "<3 crore",
+      "sort_order": 2,
+      "rate_percent": "3.25",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "15 days – 29 days",
+      "tenure_min_days": 15,
+      "tenure_max_days": 29,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 2,
+      "rate_percent": "5.00",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "30 days – 45 days",
+      "tenure_min_days": 30,
+      "tenure_max_days": 45,
+      "deposit_slab": "<3 crore",
+      "sort_order": 3,
+      "rate_percent": "3.50",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "30 days – 45 days",
+      "tenure_min_days": 30,
+      "tenure_max_days": 45,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 3,
+      "rate_percent": "5.00",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "46 days – 90 days",
+      "tenure_min_days": 46,
+      "tenure_max_days": 90,
+      "deposit_slab": "<3 crore",
+      "sort_order": 4,
+      "rate_percent": "4.50",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "46 days – 90 days",
+      "tenure_min_days": 46,
+      "tenure_max_days": 90,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 4,
+      "rate_percent": "6.00",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "91 days – 180 days",
+      "tenure_min_days": 91,
+      "tenure_max_days": 180,
+      "deposit_slab": "<3 crore",
+      "sort_order": 5,
+      "rate_percent": "5.00",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "91 days – 180 days",
+      "tenure_min_days": 91,
+      "tenure_max_days": 180,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 5,
+      "rate_percent": "4.75",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "181 days – less than 1 Year",
+      "tenure_min_days": 181,
+      "tenure_max_days": 364,
+      "deposit_slab": "<3 crore",
+      "sort_order": 6,
+      "rate_percent": "6.50",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "181 days – less than 1 Year",
+      "tenure_min_days": 181,
+      "tenure_max_days": 364,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 6,
+      "rate_percent": "4.75",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "1 year",
+      "tenure_min_days": 365,
+      "tenure_max_days": 365,
+      "deposit_slab": "<3 crore",
+      "sort_order": 7,
+      "rate_percent": "6.50",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "1 year 1 day – 370 days",
+      "tenure_min_days": 366,
+      "tenure_max_days": 370,
+      "deposit_slab": "<3 crore",
+      "sort_order": 8,
+      "rate_percent": "6.50",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "371 days – 390 days",
+      "tenure_min_days": 371,
+      "tenure_max_days": 390,
+      "deposit_slab": "<3 crore",
+      "sort_order": 9,
+      "rate_percent": "7.00",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "371 days – 390 days",
+      "tenure_min_days": 371,
+      "tenure_max_days": 390,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 9,
+      "rate_percent": "4.75",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "391 days – 499 days",
+      "tenure_min_days": 391,
+      "tenure_max_days": 499,
+      "deposit_slab": "<3 crore",
+      "sort_order": 10,
+      "rate_percent": "7.25",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "391 days – 499 days",
+      "tenure_min_days": 391,
+      "tenure_max_days": 499,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 10,
+      "rate_percent": "6.45",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "500 days – 3 years",
+      "tenure_min_days": 500,
+      "tenure_max_days": 1095,
+      "deposit_slab": "<3 crore",
+      "sort_order": 11,
+      "rate_percent": "7.35",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "500 days – 3 years",
+      "tenure_min_days": 500,
+      "tenure_max_days": 1095,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 11,
+      "rate_percent": "6.30",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "3 years 1 day – 5 years",
+      "tenure_min_days": 1096,
+      "tenure_max_days": 1825,
+      "deposit_slab": "<3 crore",
+      "sort_order": 12,
+      "rate_percent": "6.75",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "3 years 1 day – 5 years",
+      "tenure_min_days": 1096,
+      "tenure_max_days": 1825,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 12,
+      "rate_percent": "6.30",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "5 years 1 day – 10 years",
+      "tenure_min_days": 1825,
+      "tenure_max_days": 365,
+      "deposit_slab": "<3 crore",
+      "sort_order": 13,
+      "rate_percent": "6.00",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "5 Years",
+      "tenure_min_days": 1825,
+      "tenure_max_days": 1825,
+      "deposit_slab": "<3 crore",
+      "sort_order": 14,
+      "rate_percent": "6.75",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "375 days",
+      "tenure_min_days": 375,
+      "tenure_max_days": 375,
+      "deposit_slab": "<3 crore",
+      "sort_order": 15,
+      "rate_percent": "7.00",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "7 - 14 days",
+      "tenure_min_days": 7,
+      "tenure_max_days": 14,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 16,
+      "rate_percent": "4.75",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "15 - 35 days",
+      "tenure_min_days": 15,
+      "tenure_max_days": 35,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 17,
+      "rate_percent": "5.00",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "36 - 45 days",
+      "tenure_min_days": 36,
+      "tenure_max_days": 45,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 18,
+      "rate_percent": "5.40",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "46 - 60 days",
+      "tenure_min_days": 46,
+      "tenure_max_days": 60,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 19,
+      "rate_percent": "6.10",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "61 - 91 days",
+      "tenure_min_days": 61,
+      "tenure_max_days": 91,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 20,
+      "rate_percent": "6.60",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "92 - 180 days",
+      "tenure_min_days": 92,
+      "tenure_max_days": 180,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 21,
+      "rate_percent": "6.80",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "181 - 270 days",
+      "tenure_min_days": 181,
+      "tenure_max_days": 270,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 22,
+      "rate_percent": "6.85",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "271 - 366 days",
+      "tenure_min_days": 271,
+      "tenure_max_days": 366,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 23,
+      "rate_percent": "6.90",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "367 – 399 days",
+      "tenure_min_days": 367,
+      "tenure_max_days": 399,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 24,
+      "rate_percent": "7.25",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "400 - 499 days",
+      "tenure_min_days": 400,
+      "tenure_max_days": 499,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 25,
+      "rate_percent": "6.95",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "500 - 540 days",
+      "tenure_min_days": 500,
+      "tenure_max_days": 540,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 26,
+      "rate_percent": "6.95",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "541 - 731 days",
+      "tenure_min_days": 541,
+      "tenure_max_days": 731,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 27,
+      "rate_percent": "6.95",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "732 - 1095 days",
+      "tenure_min_days": 732,
+      "tenure_max_days": 1095,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 28,
+      "rate_percent": "6.90",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "3 years - 5 years",
+      "tenure_min_days": 1095,
+      "tenure_max_days": 1825,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 29,
+      "rate_percent": "6.80",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "5 Year 1 Day - 8 Years",
+      "tenure_min_days": 1825,
+      "tenure_max_days": 365,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 30,
+      "rate_percent": "6.80",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "8 Year 1 Day - 10 Years",
+      "tenure_min_days": 2920,
+      "tenure_max_days": 365,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 31,
+      "rate_percent": "6.80",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "92 – 149 days",
+      "tenure_min_days": 92,
+      "tenure_max_days": 149,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 32,
+      "rate_percent": "6.80",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "150 – 180 days",
+      "tenure_min_days": 150,
+      "tenure_max_days": 180,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 33,
+      "rate_percent": "6.80",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "271 – 364 days",
+      "tenure_min_days": 271,
+      "tenure_max_days": 364,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 34,
+      "rate_percent": "6.90",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "365 – 399 days",
+      "tenure_min_days": 365,
+      "tenure_max_days": 399,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 35,
+      "rate_percent": "7.25",
+      "source_url": "https://www.idfcfirst.bank.in/interest-rate"
+    }
+  ]
+}

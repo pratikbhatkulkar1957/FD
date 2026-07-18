@@ -1,0 +1,568 @@
+{
+  "bank_slug": "yes_bank",
+  "bank_name": "Yes Bank",
+  "scraped_at": "2026-07-18T07:00:48.158096+00:00",
+  "error": null,
+  "rates": [
+    {
+      "fd_type": "callable",
+      "tenure_label": "7 days to 14 days",
+      "tenure_min_days": 7,
+      "tenure_max_days": 14,
+      "deposit_slab": "<3 crore",
+      "sort_order": 1,
+      "rate_percent": "3.25",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "7 days to 14 days",
+      "tenure_min_days": 7,
+      "tenure_max_days": 14,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 1,
+      "rate_percent": "3.25",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "15 days to 45 days",
+      "tenure_min_days": 15,
+      "tenure_max_days": 45,
+      "deposit_slab": "<3 crore",
+      "sort_order": 2,
+      "rate_percent": "3.50",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "15 days to 45 days",
+      "tenure_min_days": 15,
+      "tenure_max_days": 45,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 2,
+      "rate_percent": "7.00",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "46 days to 90 days",
+      "tenure_min_days": 46,
+      "tenure_max_days": 90,
+      "deposit_slab": "<3 crore",
+      "sort_order": 3,
+      "rate_percent": "4.50",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "46 days to 90 days",
+      "tenure_min_days": 46,
+      "tenure_max_days": 90,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 3,
+      "rate_percent": "4.50",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "91 days to 120 days",
+      "tenure_min_days": 91,
+      "tenure_max_days": 120,
+      "deposit_slab": "<3 crore",
+      "sort_order": 4,
+      "rate_percent": "4.75",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "91 days to 120 days",
+      "tenure_min_days": 91,
+      "tenure_max_days": 120,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 4,
+      "rate_percent": "4.75",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "121 days to 180 days",
+      "tenure_min_days": 121,
+      "tenure_max_days": 180,
+      "deposit_slab": "<3 crore",
+      "sort_order": 5,
+      "rate_percent": "4.75",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "121 days to 180 days",
+      "tenure_min_days": 121,
+      "tenure_max_days": 180,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 5,
+      "rate_percent": "6.50",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "181 days to 271 days",
+      "tenure_min_days": 181,
+      "tenure_max_days": 271,
+      "deposit_slab": "<3 crore",
+      "sort_order": 6,
+      "rate_percent": "6.00",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "181 days to 271 days",
+      "tenure_min_days": 181,
+      "tenure_max_days": 271,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 6,
+      "rate_percent": "6.00",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "272 days to 335 days",
+      "tenure_min_days": 272,
+      "tenure_max_days": 335,
+      "deposit_slab": "<3 crore",
+      "sort_order": 7,
+      "rate_percent": "6.25",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "272 days to 335 days",
+      "tenure_min_days": 272,
+      "tenure_max_days": 335,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 7,
+      "rate_percent": "6.25",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "336 days to < 12 months",
+      "tenure_min_days": 336,
+      "tenure_max_days": 364,
+      "deposit_slab": "<3 crore",
+      "sort_order": 8,
+      "rate_percent": "6.50",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "12 months",
+      "tenure_min_days": 365,
+      "tenure_max_days": 365,
+      "deposit_slab": "<3 crore",
+      "sort_order": 9,
+      "rate_percent": "6.65",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "12 months",
+      "tenure_min_days": 365,
+      "tenure_max_days": 365,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 9,
+      "rate_percent": "6.65",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "12 months 1 day < 18 months",
+      "tenure_min_days": 366,
+      "tenure_max_days": 547,
+      "deposit_slab": "<3 crore",
+      "sort_order": 10,
+      "rate_percent": "6.75",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "12 months 1 day < 18 months",
+      "tenure_min_days": 366,
+      "tenure_max_days": 547,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 10,
+      "rate_percent": "6.75",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "18 months",
+      "tenure_min_days": 548,
+      "tenure_max_days": 548,
+      "deposit_slab": "<3 crore",
+      "sort_order": 11,
+      "rate_percent": "6.75",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "18 months 1 day < 24 months",
+      "tenure_min_days": 549,
+      "tenure_max_days": 729,
+      "deposit_slab": "<3 crore",
+      "sort_order": 12,
+      "rate_percent": "7.25",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "18 months 1 day < 24 months",
+      "tenure_min_days": 549,
+      "tenure_max_days": 729,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 12,
+      "rate_percent": "7.25",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "24 months < 35 months",
+      "tenure_min_days": 730,
+      "tenure_max_days": 1064,
+      "deposit_slab": "<3 crore",
+      "sort_order": 13,
+      "rate_percent": "7.00",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "24 months < 35 months",
+      "tenure_min_days": 730,
+      "tenure_max_days": 1064,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 13,
+      "rate_percent": "7.00",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "35 months",
+      "tenure_min_days": 1065,
+      "tenure_max_days": 1065,
+      "deposit_slab": "<3 crore",
+      "sort_order": 14,
+      "rate_percent": "6.90",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "35 months",
+      "tenure_min_days": 1065,
+      "tenure_max_days": 1065,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 14,
+      "rate_percent": "6.90",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "35 months 1 day to < 36 months",
+      "tenure_min_days": 1066,
+      "tenure_max_days": 1095,
+      "deposit_slab": "<3 crore",
+      "sort_order": 15,
+      "rate_percent": "7.00",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "35 months 1 day to < 36 months",
+      "tenure_min_days": 1066,
+      "tenure_max_days": 1095,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 15,
+      "rate_percent": "6.75",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "36 months to < 60 months",
+      "tenure_min_days": 1096,
+      "tenure_max_days": 1825,
+      "deposit_slab": "<3 crore",
+      "sort_order": 16,
+      "rate_percent": "7.00",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "36 months to < 60 months",
+      "tenure_min_days": 1096,
+      "tenure_max_days": 1825,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 16,
+      "rate_percent": "6.75",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "60 months",
+      "tenure_min_days": 1826,
+      "tenure_max_days": 1826,
+      "deposit_slab": "<3 crore",
+      "sort_order": 17,
+      "rate_percent": "6.75",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "60 months 1 day to <= 120 months",
+      "tenure_min_days": 1827,
+      "tenure_max_days": 3652,
+      "deposit_slab": "<3 crore",
+      "sort_order": 18,
+      "rate_percent": "6.75",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "1 Year to < 18 Months",
+      "tenure_min_days": 365,
+      "tenure_max_days": 547,
+      "deposit_slab": "<3 crore",
+      "sort_order": 19,
+      "rate_percent": "5.25",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "18 Months to < 3 Years",
+      "tenure_min_days": 6570,
+      "tenure_max_days": 1095,
+      "deposit_slab": "<3 crore",
+      "sort_order": 20,
+      "rate_percent": "5.25",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "3 YR to less than 5 Yrs",
+      "tenure_min_days": 3,
+      "tenure_max_days": 5,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 21,
+      "rate_percent": "7.00",
+      "source_url": "https://www.yes.bank.in/personal-banking/yes-individual/deposits/fixed-deposit"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "7 days to 14 days",
+      "tenure_min_days": 7,
+      "tenure_max_days": 14,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 22,
+      "rate_percent": "3.25",
+      "source_url": "https://www.yes.bank.in/pdf?name=bulk_fixed_deposit_interest_rates_v1_pdf.pdf"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "15 days to 30 days",
+      "tenure_min_days": 15,
+      "tenure_max_days": 30,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 23,
+      "rate_percent": "3.50",
+      "source_url": "https://www.yes.bank.in/pdf?name=bulk_fixed_deposit_interest_rates_v1_pdf.pdf"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "31 days to 45 days",
+      "tenure_min_days": 31,
+      "tenure_max_days": 45,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 24,
+      "rate_percent": "3.50",
+      "source_url": "https://www.yes.bank.in/pdf?name=bulk_fixed_deposit_interest_rates_v1_pdf.pdf"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "46 days to 60 days",
+      "tenure_min_days": 46,
+      "tenure_max_days": 60,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 25,
+      "rate_percent": "4.50",
+      "source_url": "https://www.yes.bank.in/pdf?name=bulk_fixed_deposit_interest_rates_v1_pdf.pdf"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "61 days to 90 days",
+      "tenure_min_days": 61,
+      "tenure_max_days": 90,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 26,
+      "rate_percent": "4.50",
+      "source_url": "https://www.yes.bank.in/pdf?name=bulk_fixed_deposit_interest_rates_v1_pdf.pdf"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "91 days to 120 days",
+      "tenure_min_days": 91,
+      "tenure_max_days": 120,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 27,
+      "rate_percent": "4.85",
+      "source_url": "https://www.yes.bank.in/pdf?name=bulk_fixed_deposit_interest_rates_v1_pdf.pdf"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "121 days to 150 days",
+      "tenure_min_days": 121,
+      "tenure_max_days": 150,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 28,
+      "rate_percent": "4.85",
+      "source_url": "https://www.yes.bank.in/pdf?name=bulk_fixed_deposit_interest_rates_v1_pdf.pdf"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "151days to 180 days",
+      "tenure_min_days": 151,
+      "tenure_max_days": 180,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 29,
+      "rate_percent": "4.85",
+      "source_url": "https://www.yes.bank.in/pdf?name=bulk_fixed_deposit_interest_rates_v1_pdf.pdf"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "181 days to 271 days",
+      "tenure_min_days": 181,
+      "tenure_max_days": 271,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 30,
+      "rate_percent": "6.10",
+      "source_url": "https://www.yes.bank.in/pdf?name=bulk_fixed_deposit_interest_rates_v1_pdf.pdf"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "272 days to 335 days",
+      "tenure_min_days": 272,
+      "tenure_max_days": 335,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 31,
+      "rate_percent": "6.35",
+      "source_url": "https://www.yes.bank.in/pdf?name=bulk_fixed_deposit_interest_rates_v1_pdf.pdf"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "336 days to <12 m",
+      "tenure_min_days": 336,
+      "tenure_max_days": 12,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 32,
+      "rate_percent": "6.60",
+      "source_url": "https://www.yes.bank.in/pdf?name=bulk_fixed_deposit_interest_rates_v1_pdf.pdf"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "12M (1 Year)",
+      "tenure_min_days": 365,
+      "tenure_max_days": 365,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 33,
+      "rate_percent": "6.75",
+      "source_url": "https://www.yes.bank.in/pdf?name=bulk_fixed_deposit_interest_rates_v1_pdf.pdf"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "12 M 1 D to <15m",
+      "tenure_min_days": 366,
+      "tenure_max_days": 456,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 34,
+      "rate_percent": "6.85",
+      "source_url": "https://www.yes.bank.in/pdf?name=bulk_fixed_deposit_interest_rates_v1_pdf.pdf"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "15m to 18m",
+      "tenure_min_days": 457,
+      "tenure_max_days": 547,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 35,
+      "rate_percent": "6.85",
+      "source_url": "https://www.yes.bank.in/pdf?name=bulk_fixed_deposit_interest_rates_v1_pdf.pdf"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "18M 1 D to < 24 M",
+      "tenure_min_days": 549,
+      "tenure_max_days": 729,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 36,
+      "rate_percent": "7.35",
+      "source_url": "https://www.yes.bank.in/pdf?name=bulk_fixed_deposit_interest_rates_v1_pdf.pdf"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "24 M to < 35 M",
+      "tenure_min_days": 730,
+      "tenure_max_days": 1064,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 37,
+      "rate_percent": "7.10",
+      "source_url": "https://www.yes.bank.in/pdf?name=bulk_fixed_deposit_interest_rates_v1_pdf.pdf"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "35 Month",
+      "tenure_min_days": 1065,
+      "tenure_max_days": 1065,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 38,
+      "rate_percent": "7.10",
+      "source_url": "https://www.yes.bank.in/pdf?name=bulk_fixed_deposit_interest_rates_v1_pdf.pdf"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "35 M < 3 YR",
+      "tenure_min_days": 35,
+      "tenure_max_days": 3,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 39,
+      "rate_percent": "7.10",
+      "source_url": "https://www.yes.bank.in/pdf?name=bulk_fixed_deposit_interest_rates_v1_pdf.pdf"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "3 YR to less than 5 Yrs",
+      "tenure_min_days": 3,
+      "tenure_max_days": 5,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 40,
+      "rate_percent": "7.10",
+      "source_url": "https://www.yes.bank.in/pdf?name=bulk_fixed_deposit_interest_rates_v1_pdf.pdf"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "5 Years",
+      "tenure_min_days": 1825,
+      "tenure_max_days": 1825,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 41,
+      "rate_percent": "6.85",
+      "source_url": "https://www.yes.bank.in/pdf?name=bulk_fixed_deposit_interest_rates_v1_pdf.pdf"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "5 Years 1 Day & Above",
+      "tenure_min_days": 1825,
+      "tenure_max_days": 365,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 42,
+      "rate_percent": "6.85",
+      "source_url": "https://www.yes.bank.in/pdf?name=bulk_fixed_deposit_interest_rates_v1_pdf.pdf"
+    }
+  ]
+}

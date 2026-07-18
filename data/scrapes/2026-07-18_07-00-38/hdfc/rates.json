@@ -1,0 +1,408 @@
+{
+  "bank_slug": "hdfc",
+  "bank_name": "HDFC Bank",
+  "scraped_at": "2026-07-18T07:00:54.341836+00:00",
+  "error": null,
+  "rates": [
+    {
+      "fd_type": "callable",
+      "tenure_label": "7 - 14 days",
+      "tenure_min_days": 7,
+      "tenure_max_days": 14,
+      "deposit_slab": "<3 crore",
+      "sort_order": 1,
+      "rate_percent": "2.75",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "7 - 14 days",
+      "tenure_min_days": 7,
+      "tenure_max_days": 14,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 1,
+      "rate_percent": "3.50",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "15-29 days",
+      "tenure_min_days": 15,
+      "tenure_max_days": 29,
+      "deposit_slab": "<3 crore",
+      "sort_order": 2,
+      "rate_percent": "2.75",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "15-29 days",
+      "tenure_min_days": 15,
+      "tenure_max_days": 29,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 2,
+      "rate_percent": "3.50",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "30-45 days",
+      "tenure_min_days": 30,
+      "tenure_max_days": 45,
+      "deposit_slab": "<3 crore",
+      "sort_order": 3,
+      "rate_percent": "3.25",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "30-45 days",
+      "tenure_min_days": 30,
+      "tenure_max_days": 45,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 3,
+      "rate_percent": "4.75",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "46-60 days",
+      "tenure_min_days": 46,
+      "tenure_max_days": 60,
+      "deposit_slab": "<3 crore",
+      "sort_order": 4,
+      "rate_percent": "4.25",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "46-60 days",
+      "tenure_min_days": 46,
+      "tenure_max_days": 60,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 4,
+      "rate_percent": "5.00",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "61-89 days",
+      "tenure_min_days": 61,
+      "tenure_max_days": 89,
+      "deposit_slab": "<3 crore",
+      "sort_order": 5,
+      "rate_percent": "4.25",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "61-89 days",
+      "tenure_min_days": 61,
+      "tenure_max_days": 89,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 5,
+      "rate_percent": "5.25",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "90 days <= 6 months",
+      "tenure_min_days": 90,
+      "tenure_max_days": 182,
+      "deposit_slab": "<3 crore",
+      "sort_order": 6,
+      "rate_percent": "4.25",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "90 days <= 6 months",
+      "tenure_min_days": 90,
+      "tenure_max_days": 182,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 6,
+      "rate_percent": "5.50",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "6 months 1 day <=9 months",
+      "tenure_min_days": 183,
+      "tenure_max_days": 274,
+      "deposit_slab": "<3 crore",
+      "sort_order": 7,
+      "rate_percent": "5.50",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "6 months 1 day <=9 months",
+      "tenure_min_days": 183,
+      "tenure_max_days": 274,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 7,
+      "rate_percent": "5.75",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "9 months 1 day to < 1 Year",
+      "tenure_min_days": 275,
+      "tenure_max_days": 364,
+      "deposit_slab": "<3 crore",
+      "sort_order": 8,
+      "rate_percent": "5.75",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "9 months 1 day to < 1 Year",
+      "tenure_min_days": 275,
+      "tenure_max_days": 364,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 8,
+      "rate_percent": "6.00",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "1 Year to < 15 months",
+      "tenure_min_days": 365,
+      "tenure_max_days": 456,
+      "deposit_slab": "<3 crore",
+      "sort_order": 9,
+      "rate_percent": "6.25",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "1 Year to < 15 months",
+      "tenure_min_days": 365,
+      "tenure_max_days": 456,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 9,
+      "rate_percent": "6.25",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "15 months to < 18 months",
+      "tenure_min_days": 457,
+      "tenure_max_days": 547,
+      "deposit_slab": "<3 crore",
+      "sort_order": 10,
+      "rate_percent": "6.35",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "15 months to < 18 months",
+      "tenure_min_days": 457,
+      "tenure_max_days": 547,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 10,
+      "rate_percent": "6.25",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "18 months to < 21 months",
+      "tenure_min_days": 548,
+      "tenure_max_days": 638,
+      "deposit_slab": "<3 crore",
+      "sort_order": 11,
+      "rate_percent": "6.45",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "18 months to < 21 months",
+      "tenure_min_days": 548,
+      "tenure_max_days": 638,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 11,
+      "rate_percent": "6.40",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "21 months to 2 years",
+      "tenure_min_days": 639,
+      "tenure_max_days": 730,
+      "deposit_slab": "<3 crore",
+      "sort_order": 12,
+      "rate_percent": "6.45",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "21 months to 2 years",
+      "tenure_min_days": 639,
+      "tenure_max_days": 730,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 12,
+      "rate_percent": "6.40",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "2 Years 1 day to < 2 Year 11 Months",
+      "tenure_min_days": 731,
+      "tenure_max_days": 1095,
+      "deposit_slab": "<3 crore",
+      "sort_order": 13,
+      "rate_percent": "6.45",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "2 Years 1 day to < 2 Year 11 Months",
+      "tenure_min_days": 731,
+      "tenure_max_days": 1095,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 13,
+      "rate_percent": "6.25",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "2 Years 11 Months (35 months)",
+      "tenure_min_days": 1065,
+      "tenure_max_days": 1065,
+      "deposit_slab": "<3 crore",
+      "sort_order": 14,
+      "rate_percent": "6.45",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "2 Years 11 Months 1 day <= 3 Year",
+      "tenure_min_days": 730,
+      "tenure_max_days": 4015,
+      "deposit_slab": "<3 crore",
+      "sort_order": 15,
+      "rate_percent": "6.45",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "2 Years 11 Months 1 day <= 3 Year",
+      "tenure_min_days": 730,
+      "tenure_max_days": 4015,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 15,
+      "rate_percent": "6.15",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "3 Years 1 day to < 4 Years 7 Months",
+      "tenure_min_days": 1096,
+      "tenure_max_days": 1825,
+      "deposit_slab": "<3 crore",
+      "sort_order": 16,
+      "rate_percent": "6.50",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "4 Year 7 Months (55 months)",
+      "tenure_min_days": 1674,
+      "tenure_max_days": 1674,
+      "deposit_slab": "<3 crore",
+      "sort_order": 17,
+      "rate_percent": "6.40",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "4 Year 7 Months 1 day <=5 Years",
+      "tenure_min_days": 1460,
+      "tenure_max_days": 2555,
+      "deposit_slab": "<3 crore",
+      "sort_order": 18,
+      "rate_percent": "6.40",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "5 Years 1 day to 10 Years",
+      "tenure_min_days": 1826,
+      "tenure_max_days": 3650,
+      "deposit_slab": "<3 crore",
+      "sort_order": 19,
+      "rate_percent": "6.15",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "1 Year to < 15 months",
+      "tenure_min_days": 365,
+      "tenure_max_days": 456,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 20,
+      "rate_percent": "6.30",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "15 months to < 18 months",
+      "tenure_min_days": 457,
+      "tenure_max_days": 547,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 21,
+      "rate_percent": "6.30",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "18 months to < 21 months",
+      "tenure_min_days": 548,
+      "tenure_max_days": 638,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 22,
+      "rate_percent": "6.45",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "21 months to 2 years",
+      "tenure_min_days": 639,
+      "tenure_max_days": 730,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 23,
+      "rate_percent": "6.45",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "2 year 1 day to 3 years",
+      "tenure_min_days": 731,
+      "tenure_max_days": 1095,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 24,
+      "rate_percent": "6.35",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "3 year 1 day to 5 years",
+      "tenure_min_days": 1096,
+      "tenure_max_days": 1825,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 25,
+      "rate_percent": "6.45",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "5 year 1 day to 10 years",
+      "tenure_min_days": 1826,
+      "tenure_max_days": 3650,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 26,
+      "rate_percent": "6.25",
+      "source_url": "https://www.hdfc.bank.in/interest-rates"
+    }
+  ]
+}

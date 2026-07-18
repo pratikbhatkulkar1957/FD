@@ -1,0 +1,193 @@
+{% extends "base.html" %}
+
+{% block title %}FD Rates Dashboard{% endblock %}
+
+{% block content %}
+{% if scraped %}
+<div class="alert">Rates refreshed successfully from official bank websites.</div>
+{% endif %}
+{% if scrape_failed %}
+<div class="alert" style="background:#fee2e2;border-color:#fca5a5;color:#991b1b">
+  Could not refresh: {{ scrape_failed }}.
+</div>
+{% endif %}
+<div class="alert" style="background:#e0f2fe;border-color:#7dd3fc;color:#0c4a6e">
+  Each bank is shown the way it publishes on its website / PDF:
+  separate amount tables for HDFC, Axis, IDFC, IndusInd, Yes Bank, SBI;
+  side-by-side columns for CUB and ICICI. Tenures stay exact bank text.
+</div>
+{% if no_data %}
+<div class="alert" style="background:#fef3c7;border-color:#fcd34d;color:#92400e">
+  No rate data loaded yet. Click <strong>Refresh Rates</strong> in the nav bar.
+</div>
+{% endif %}
+{% if bank_has_no_data %}
+<div class="alert" style="background:#fef3c7;border-color:#fcd34d;color:#92400e">
+  No live rates for this bank with the current filters.
+</div>
+{% endif %}
+
+<div class="stats">
+  <div class="stat">
+    <div class="num">{{ live_banks|length }}</div>
+    <div class="lbl">Banks With Data</div>
+  </div>
+  <div class="stat">
+    <div class="num">{{ stats.rates }}</div>
+    <div class="lbl">Rate Entries</div>
+  </div>
+  <div class="stat">
+    <div class="num">{{ stats.history }}</div>
+    <div class="lbl">History Records</div>
+  </div>
+  {% if last_updated %}
+  <div class="stat">
+    <div class="num" style="font-size:1rem;line-height:1.3;padding-top:.35rem">{{ last_updated }}</div>
+    <div class="lbl">Last Data Update</div>
+  </div>
+  {% endif %}
+</div>
+
+{% if best_callable or best_non_callable %}
+<div class="card best-card">
+  <h2>Best rate for your filters</h2>
+  <div class="best-rate-grid">
+    {% for best in [best_callable, best_non_callable] %}
+    <div class="best-rate-col">
+      <div class="best-rate-type">{% if loop.index == 1 %}Callable{% else %}Non-Callable{% endif %}</div>
+      {% if best %}
+      <div class="best-rate-panel">
+        <div class="best-rate-value">{{ best.rate_percent }}</div>
+        <div class="best-rate-meta">
+          <div><strong>{{ best.bank_name }}</strong></div>
+          <div>{{ best.tenure_label }}</div>
+          <div class="muted">{{ best.deposit_slab }}</div>
+          {% if best.source_url %}
+          <div class="source-link" style="margin-top:.35rem">
+            <a href="{{ best.source_url }}" target="_blank" rel="noopener noreferrer">View on bank website</a>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+      {% else %}
+      <div class="best-rate-empty">No matching rate</div>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+<div class="card">
+  <h2>Filters</h2>
+  <form method="get" action="/" class="filters">
+    <div>
+      <label for="bank_slug">Bank</label>
+      <select name="bank_slug" id="bank_slug">
+        <option value="" {% if not selected_bank %}selected{% endif %}>All banks</option>
+        {% for bank in banks %}
+        <option value="{{ bank.slug }}" {% if selected_bank == bank.slug %}selected{% endif %}>
+          {{ bank.name }}{% if bank.slug not in live_banks %} (no data){% endif %}
+        </option>
+        {% endfor %}
+      </select>
+    </div>
+    <div>
+      <label for="fd_type">FD type</label>
+      <select name="fd_type" id="fd_type">
+        <option value="all" {% if selected_fd_type == 'all' %}selected{% endif %}>All</option>
+        <option value="callable" {% if selected_fd_type == 'callable' %}selected{% endif %}>Callable</option>
+        <option value="non_callable" {% if selected_fd_type == 'non_callable' %}selected{% endif %}>Non-callable</option>
+      </select>
+    </div>
+    <div>
+      <label for="deposit_slab">Deposit slab</label>
+      <select name="deposit_slab" id="deposit_slab">
+        <option value="all" {% if selected_slab == 'all' %}selected{% endif %}>Both slabs</option>
+        <option value="<3 crore" {% if selected_slab == '<3 crore' %}selected{% endif %}>&lt;3 crore</option>
+        <option value="3 Cr < 5 Cr" {% if selected_slab == '3 Cr < 5 Cr' %}selected{% endif %}>3 Cr &lt; 5 Cr</option>
+      </select>
+    </div>
+    <div>
+      <label for="tenure_days">Tenure days (optional)</label>
+      <input type="number" name="tenure_days" id="tenure_days" min="1" max="5000"
+             placeholder="e.g. 444" value="{{ tenure_days or '' }}">
+    </div>
+    <div>
+      <button type="submit" class="btn btn-primary" style="width:100%">Apply filters</button>
+    </div>
+    <div>
+      <a href="/" class="btn" style="width:100%;display:inline-block;text-align:center">Clear</a>
+    </div>
+  </form>
+  <p style="margin-top:.85rem;font-size:.85rem;color:var(--muted)">
+    ★ = best among current filter results for that slab.
+    <a href="/compare">Open full best-rate compare →</a>
+  </p>
+</div>
+
+{% if bank_groups %}
+  {% for group in bank_groups %}
+  <div class="bank-block" id="bank-{{ group.bank_slug }}">
+    <div class="bank-block-head">
+      <h2>{{ group.bank_name }}</h2>
+      {% if group.note %}<p class="bank-note">{{ group.note }}</p>{% endif %}
+    </div>
+
+    {% for table in group.tables %}
+    <div class="bank-table-wrap" id="{{ table.bank_slug }}-{{ table.fd_type }}-{{ loop.index }}">
+      <table class="bank-rate-table">
+        <thead>
+          <tr>
+            <th colspan="{% if table.dual_slab %}3{% else %}2{% endif %}" class="table-title {{ table.css_class }}">
+              {{ table.title }}
+            </th>
+          </tr>
+          <tr>
+            <th>{{ table.tenure_header }}</th>
+            {% if table.dual_slab %}
+            <th>{{ table.under_header }}</th>
+            <th>{{ table.three_header }}</th>
+            {% else %}
+            <th>{{ table.rate_header or table.single_slab_label }}</th>
+            {% endif %}
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in table.rows %}
+          <tr>
+            <td>{{ row.tenure_label }}</td>
+            {% if table.dual_slab %}
+            <td class="{% if row.under_3cr == '—' %}missing-slab{% elif row.under_3cr_best %}rate best-cell{% else %}rate{% endif %}">
+              {{ row.under_3cr }}{% if row.under_3cr_best %} ★{% endif %}
+            </td>
+            <td class="{% if row.three_to_5cr == '—' %}missing-slab{% elif row.three_to_5cr_best %}rate best-cell{% else %}rate{% endif %}">
+              <strong>{{ row.three_to_5cr }}</strong>{% if row.three_to_5cr_best %} ★{% endif %}
+            </td>
+            {% else %}
+            <td class="{% if row.rate == '—' %}missing-slab{% elif row.is_best %}rate best-cell{% else %}rate{% endif %}">
+              {{ row.rate }}{% if row.is_best %} ★{% endif %}
+            </td>
+            {% endif %}
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      {% if table.source_url %}
+      <p class="source-link">
+        Source:
+        <a href="{{ table.source_url }}" target="_blank" rel="noopener noreferrer">{{ table.source_url }}</a>
+      </p>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  {% endfor %}
+{% else %}
+<div class="card">
+  <div class="empty">
+    <p>No rates match these filters. Clear filters or click <strong>Refresh Rates</strong>.</p>
+  </div>
+</div>
+{% endif %}
+{% endblock %}

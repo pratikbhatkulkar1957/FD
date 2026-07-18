@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}FD Rates Tracker{% endblock %}</title>
+  <style>
+    :root {
+      --bg: #f4f6f9;
+      --card: #ffffff;
+      --text: #1a2332;
+      --muted: #5c6b7a;
+      --primary: #1a56db;
+      --primary-dark: #1444b0;
+      --border: #e2e8f0;
+      --success: #0e9f6e;
+      --highlight: #fef3c7;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(135deg, #1a56db 0%, #0e3a8c 100%);
+      color: #fff;
+      padding: 1.5rem 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,.12);
+    }
+    header h1 { font-size: 1.6rem; font-weight: 700; }
+    header p { opacity: .9; font-size: .95rem; margin-top: .25rem; }
+    nav {
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+      padding: .75rem 2rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    nav a, nav button.link-btn {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: .9rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    nav a:hover, nav button.link-btn:hover { text-decoration: underline; }
+    main { max-width: 1200px; margin: 0 auto; padding: 1.5rem 2rem 3rem; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.25rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,.04);
+    }
+    .card h2 {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+    .alert {
+      background: #d1fae5;
+      border: 1px solid #6ee7b7;
+      color: #065f46;
+      padding: .75rem 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      font-size: .9rem;
+    }
+    .filters {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1rem;
+      align-items: end;
+    }
+    label {
+      display: block;
+      font-size: .8rem;
+      font-weight: 600;
+      color: var(--muted);
+      margin-bottom: .35rem;
+      text-transform: uppercase;
+      letter-spacing: .03em;
+    }
+    select, input[type="number"] {
+      width: 100%;
+      padding: .55rem .75rem;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: .95rem;
+      background: #fff;
+    }
+    .btn {
+      display: inline-block;
+      padding: .55rem 1.1rem;
+      border-radius: 6px;
+      font-size: .9rem;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+    }
+    .btn-primary { background: var(--primary); color: #fff; }
+    .btn-primary:hover { background: var(--primary-dark); }
+    .btn-secondary {
+      background: #fff;
+      color: var(--primary);
+      border: 1px solid var(--primary);
+    }
+    .btn-secondary:hover { background: #eff6ff; }
+    .actions { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: 1rem; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .92rem;
+    }
+    th, td {
+      padding: .7rem .85rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    th {
+      background: #f8fafc;
+      font-weight: 600;
+      color: var(--muted);
+      font-size: .78rem;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+    tr:hover td { background: #f8fafc; }
+    .rate { font-weight: 700; color: var(--primary); font-size: 1rem; }
+    .missing-slab { color: var(--muted); font-weight: 400; }
+    .best-card {
+      border-color: #fbbf24;
+      background: linear-gradient(135deg, #fffbeb 0%, #ffffff 55%);
+    }
+    .best-rate-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .best-rate-col {
+      border: 1px solid #fbbf24;
+      border-radius: 8px;
+      padding: .9rem 1rem;
+      background: rgba(255,255,255,.6);
+    }
+    .best-rate-type {
+      font-size: .8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .03em;
+      color: #b45309;
+      margin-bottom: .5rem;
+    }
+    .best-rate-empty {
+      color: var(--muted);
+      font-size: .9rem;
+      padding: .5rem 0;
+    }
+    @media (max-width: 700px) {
+      .best-rate-grid { grid-template-columns: 1fr; }
+    }
+    .best-rate-panel {
+      display: flex;
+      gap: 1.25rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .best-rate-value {
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: #b45309;
+      line-height: 1;
+    }
+    .best-rate-meta { font-size: .95rem; }
+    .best-rate-meta .muted { color: var(--muted); font-size: .85rem; }
+    .best-cell {
+      background: var(--highlight) !important;
+    }
+    .bank-rate-table { max-width: 900px; }
+    .badge {
+      display: inline-block;
+      padding: .15rem .5rem;
+      border-radius: 999px;
+      font-size: .75rem;
+      font-weight: 600;
+    }
+    .badge-senior { background: #fef3c7; color: #92400e; }
+    .badge-regular { background: #dbeafe; color: #1e40af; }
+    .top-rate { background: var(--highlight) !important; }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+    }
+    .stat {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+    }
+    .stat .num { font-size: 1.8rem; font-weight: 700; color: var(--primary); }
+    .stat .lbl { font-size: .8rem; color: var(--muted); margin-top: .2rem; }
+    .empty {
+      text-align: center;
+      padding: 2.5rem;
+      color: var(--muted);
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      color: var(--muted);
+      font-size: .85rem;
+      border-top: 1px solid var(--border);
+      margin-top: 2rem;
+    }
+    .bank-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+    }
+    .bank-chip {
+      display: inline-block;
+      padding: .45rem .9rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: #fff;
+      color: var(--text);
+      text-decoration: none;
+      font-size: .88rem;
+      font-weight: 500;
+    }
+    .bank-chip:hover { border-color: var(--primary); color: var(--primary); }
+    .bank-chip.active {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+    .bank-block {
+      margin-bottom: 2rem;
+      padding-bottom: .5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .bank-block:last-child { border-bottom: none; }
+    .bank-block-head {
+      margin: 0 0 1rem;
+    }
+    .bank-block-head h2 {
+      font-size: 1.25rem;
+      margin: 0 0 .35rem;
+      color: var(--text);
+    }
+    .bank-note {
+      font-size: .85rem;
+      color: var(--muted);
+      margin: 0;
+    }
+    .bank-table-wrap {
+      margin-bottom: 1.5rem;
+      overflow-x: auto;
+    }
+    .bank-rate-table {
+      width: 100%;
+      max-width: 700px;
+      border-collapse: collapse;
+      font-size: .95rem;
+      background: #fff;
+      border: 1px solid #000;
+    }
+    .bank-rate-table th,
+    .bank-rate-table td {
+      border: 1px solid #000;
+      padding: .55rem .75rem;
+      text-align: left;
+    }
+    .bank-rate-table .table-title {
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 700;
+      padding: .65rem;
+    }
+    .bank-rate-table .table-title.callable {
+      background: #f5c99a;
+    }
+    .bank-rate-table .table-title.non-callable {
+      background: #b8e0b0;
+    }
+    .bank-rate-table .table-title.compare {
+      background: #c7d2fe;
+    }
+    .bank-rate-table thead tr:nth-child(2) th {
+      background: #fff;
+      font-weight: 700;
+      text-transform: none;
+      letter-spacing: 0;
+      font-size: .95rem;
+    }
+    .bank-rate-table tbody tr:hover td {
+      background: #fafafa;
+    }
+    .source-link {
+      font-size: .82rem;
+      color: var(--muted);
+      margin-top: .4rem;
+      max-width: 700px;
+      word-break: break-all;
+    }
+    .source-link a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .source-link a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FD Rates Tracker</h1>
+    <p>Compare Fixed Deposit rates across Indian banks</p>
+    {% if last_updated %}
+    <p style="font-size:.9rem;opacity:.95;margin-top:.35rem">Last updated: <strong>{{ last_updated }}</strong></p>
+    {% endif %}
+  </header>
+  <nav>
+    <a href="/">Dashboard</a>
+    <a href="/compare">Best Rates</a>
+    <a href="/export/csv">Download CSV</a>
+    <a href="/export/excel">Download Excel</a>
+    <form action="/scrape/run-page" method="post" style="display:inline">
+      <button type="submit" class="link-btn">Refresh Rates</button>
+    </form>
+    <a href="/docs" target="_blank">API Docs</a>
+  </nav>
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+  <footer>Data stored in MySQL &middot; FastAPI backend</footer>
+</body>
+</html>

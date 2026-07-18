@@ -1,0 +1,89 @@
+len=5640 type=html
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1">
+    <script type="text/javascript">
+        function deleteCookie(name) {
+            var path = "/sites";
+            document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=" + path;
+        }
+
+        function setCookie(name,value,days) {
+            deleteCookie(name);
+            var expires = "";
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days*24*60*60*1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "")  + expires + "; path=/sites";
+        }
+        
+        setCookie('siteId','yesbank',1);
+        
+        var SCS = {
+            sitePrefix: '/sites/yesbank/', 
+            staticPrefix: '/sites/builder',
+            servicePrefix: '/sites/web/ui/idcs',
+            siteId: 'yesbank',
+            pageId: '1747901541262',
+            localePageId: '',
+            pageLocale: 'en-IN',
+            // localeAlias: '',
+            defaultSiteLocale: 'en-IN',
+            // isDetailPage: false,
+            // placeholderContent: null,
+            siteInfo: {
+  "properties" : {
+    "themeName" : "Yes-Bank-MigrationTheme",
+    "siteName" : "yesbank",
+    "siteRootPrefix" : "/yesbank/",
+    "isLive" : null,
+    "description" : null,
+    "keywords" : "",
+    "header" : "",
+    "footer" : "",
+    "hideFromSearchEngines" : false,
+    "errorPage" : 1747901543558,
+    "siteURL" : "",
+    "noIndex" : false,
+    "noFollow" : false,
+    "noArchive" : false,
+    "noSnippet" : false,
+    "collectionId" : "",
+    "targetId" : "",
+    "targetAccessTokens" : [ ],
+    "isCobrowseEnabled" : false,
+    "cobrowseId" : "",
+    "siteConnections" : { 
+      "OPAConnection":null,
+      "VBCSConnection":"https://yblvbcs.yes.bank.in"
+    },
+    "conversationId" : null,
+    "mapProvider" : "oracle",
+    "isEnterprise" : true,
+    "repositoryId" : "FED565B4408F415FA4E694D35DB7B4BE",
+    "arCollectionId" : "COLLA24E8CA592304C23BF59AA3C85AD21CB",
+    "defaultLanguage" : "en-IN",
+    "localizationPolicy" : "CB7FC3D798D11A6AE0533410000A26FB",
+    "availableLanguages" : null,
+    "isJSModuleEnabled" : false,
+    "isAssetAnalyticsEnabled" : false,
+    "useStandardAnalyticsScript" : false,
+    "isWebAnalyticsEnabled" : false,
+    "webAnalyticsScript" : null,
+    "customProperties" : {
+      "siteToken" : "21f7ccfa2fc3401091938f541a6f8f2a",
+      "VbcsDomain" :"yblvbcs.yes.bank.in"
+     
+    },
+    "localeAliases" : { }
+  }
+},
+            localeSiteInfo: null,
+            pageData: {"properties":{"title":"","pageLayout":"YBL_MIG_DOC_LAYOUT.html","mobileLayout":"YBL_MIG_MOBILE_DOC_LAYOUT.html","pageDescription":"","keywords":"","hideFromSearchEngines":false,"styles":[],"header":"","footer":"","noIndex":true,"noFollow":true,"noArchiv

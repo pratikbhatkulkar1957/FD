@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+
+{% block title %}Best FD Rates Comparison{% endblock %}
+
+{% block content %}
+<div class="card">
+  <h2>Best Rate Comparison</h2>
+  <p style="color:var(--muted);font-size:.9rem;margin-bottom:1rem">
+    Highest rate across banks for common tenure anchors (each bank’s own published band covering that day).
+  </p>
+  <form method="get" action="/compare" class="filters">
+    <div>
+      <label for="fd_type">FD Type</label>
+      <select name="fd_type" id="fd_type">
+        <option value="callable" {% if fd_type == 'callable' %}selected{% endif %}>Callable</option>
+        <option value="non_callable" {% if fd_type == 'non_callable' %}selected{% endif %}>Non-Callable</option>
+      </select>
+    </div>
+    <div>
+      <button type="submit" class="btn btn-primary" style="width:100%">Apply</button>
+    </div>
+  </form>
+</div>
+
+{% if best_rows %}
+<div class="bank-table-wrap">
+  <table class="bank-rate-table">
+    <thead>
+      <tr>
+        <th colspan="5" class="table-title compare">{{ fd_type_label }} — Best Rates Across Banks</th>
+      </tr>
+      <tr>
+        <th>Tenure anchor</th>
+        <th>Best &lt;3 Cr</th>
+        <th>Bank (their tenor)</th>
+        <th>Best 3 Cr &lt; 5 Cr</th>
+        <th>Bank (their tenor)</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in best_rows %}
+      <tr>
+        <td>{{ row.tenure_label }}</td>
+        <td class="{% if row.under_3cr_rate == '—' %}missing-slab{% else %}rate{% endif %}">{{ row.under_3cr_rate }}</td>
+        <td class="{% if row.under_3cr_bank == '—' %}missing-slab{% endif %}">
+          <strong>{{ row.under_3cr_bank }}</strong>
+          {% if row.under_3cr_tenure and row.under_3cr_tenure != '—' %}
+          <div style="font-size:.8rem;color:var(--muted)">{{ row.under_3cr_tenure }}</div>
+          {% endif %}
+        </td>
+        <td class="{% if row.three_to_5cr_rate == '—' %}missing-slab{% else %}rate{% endif %}">{{ row.three_to_5cr_rate }}</td>
+        <td class="{% if row.three_to_5cr_bank == '—' %}missing-slab{% endif %}">
+          <strong>{{ row.three_to_5cr_bank }}</strong>
+          {% if row.three_to_5cr_tenure and row.three_to_5cr_tenure != '—' %}
+          <div style="font-size:.8rem;color:var(--muted)">{{ row.three_to_5cr_tenure }}</div>
+          {% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<div class="card">
+  <h2>Full Ranking by Tenure</h2>
+  {% for tenure in tenures %}
+  <div style="margin-bottom:1.5rem">
+    <h3 style="font-size:1rem;margin-bottom:.5rem">{{ tenure }}</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem">
+      <div>
+        <h4 style="font-size:.85rem;color:var(--muted);margin-bottom:.35rem">&lt;3 crore</h4>
+        <table>
+          <thead>
+            <tr><th>#</th><th>Bank</th><th>Their tenor</th><th>Rate</th></tr>
+          </thead>
+          <tbody>
+            {% for item in rankings[tenure]['<3 crore'] %}
+            <tr class="{% if loop.first %}top-rate{% endif %}">
+              <td>{{ item.rank }}</td>
+              <td>{{ item.bank_name }}</td>
+              <td style="font-size:.85rem">{{ item.tenure_label }}</td>
+              <td class="rate">{{ item.rate_percent }}</td>
+            </tr>
+            {% else %}
+            <tr><td colspan="4">No data</td></tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h4 style="font-size:.85rem;color:var(--muted);margin-bottom:.35rem">3 Cr &lt; 5 Cr</h4>
+        <table>
+          <thead>
+            <tr><th>#</th><th>Bank</th><th>Their tenor</th><th>Rate</th></tr>
+          </thead>
+          <tbody>
+            {% for item in rankings[tenure]['3 Cr < 5 Cr'] %}
+            <tr class="{% if loop.first %}top-rate{% endif %}">
+              <td>{{ item.rank }}</td>
+              <td>{{ item.bank_name }}</td>
+              <td style="font-size:.85rem">{{ item.tenure_label }}</td>
+              <td class="rate">{{ item.rate_percent }}</td>
+            </tr>
+            {% else %}
+            <tr><td colspan="4">No data</td></tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% else %}
+<div class="card">
+  <div class="empty">
+    <p>No comparison data yet. Click <strong>Refresh Rates</strong> first.</p>
+  </div>
+</div>
+{% endif %}
+{% endblock %}

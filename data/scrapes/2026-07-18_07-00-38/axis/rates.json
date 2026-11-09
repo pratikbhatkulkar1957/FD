@@ -1,0 +1,528 @@
+{
+  "bank_slug": "axis",
+  "bank_name": "Axis Bank",
+  "scraped_at": "2026-07-18T07:01:11.136531+00:00",
+  "error": null,
+  "rates": [
+    {
+      "fd_type": "callable",
+      "tenure_label": "7 – 14 days",
+      "tenure_min_days": 7,
+      "tenure_max_days": 14,
+      "deposit_slab": "<3 crore",
+      "sort_order": 1,
+      "rate_percent": "3.00",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "7 – 14 days",
+      "tenure_min_days": 7,
+      "tenure_max_days": 14,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 1,
+      "rate_percent": "3.50",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "15 – 29 days",
+      "tenure_min_days": 15,
+      "tenure_max_days": 29,
+      "deposit_slab": "<3 crore",
+      "sort_order": 2,
+      "rate_percent": "3.00",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "15 – 29 days",
+      "tenure_min_days": 15,
+      "tenure_max_days": 29,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 2,
+      "rate_percent": "3.50",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "30 – 45 days",
+      "tenure_min_days": 30,
+      "tenure_max_days": 45,
+      "deposit_slab": "<3 crore",
+      "sort_order": 3,
+      "rate_percent": "3.25",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "30 – 45 days",
+      "tenure_min_days": 30,
+      "tenure_max_days": 45,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 3,
+      "rate_percent": "4.50",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "46 – 60 days",
+      "tenure_min_days": 46,
+      "tenure_max_days": 60,
+      "deposit_slab": "<3 crore",
+      "sort_order": 4,
+      "rate_percent": "4.00",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "46 – 60 days",
+      "tenure_min_days": 46,
+      "tenure_max_days": 60,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 4,
+      "rate_percent": "4.75",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "61 days - 87 days",
+      "tenure_min_days": 61,
+      "tenure_max_days": 87,
+      "deposit_slab": "<3 crore",
+      "sort_order": 5,
+      "rate_percent": "4.75",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "61 days - 87 days",
+      "tenure_min_days": 61,
+      "tenure_max_days": 87,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 5,
+      "rate_percent": "5.00",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "88 days – 3 months 24 days",
+      "tenure_min_days": 2678,
+      "tenure_max_days": 91,
+      "deposit_slab": "<3 crore",
+      "sort_order": 6,
+      "rate_percent": "5.00",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "88 days – 3 months 24 days",
+      "tenure_min_days": 2678,
+      "tenure_max_days": 91,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 6,
+      "rate_percent": "5.40",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "3 months 25 days < 4 months",
+      "tenure_min_days": 91,
+      "tenure_max_days": 761,
+      "deposit_slab": "<3 crore",
+      "sort_order": 7,
+      "rate_percent": "5.00",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "3 months 25 days < 4 months",
+      "tenure_min_days": 91,
+      "tenure_max_days": 761,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 7,
+      "rate_percent": "4.25",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "4 months < 6 months",
+      "tenure_min_days": 122,
+      "tenure_max_days": 183,
+      "deposit_slab": "<3 crore",
+      "sort_order": 8,
+      "rate_percent": "5.00",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "4 months < 6 months",
+      "tenure_min_days": 122,
+      "tenure_max_days": 183,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 8,
+      "rate_percent": "5.40",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "6 months < 9 months",
+      "tenure_min_days": 183,
+      "tenure_max_days": 274,
+      "deposit_slab": "<3 crore",
+      "sort_order": 9,
+      "rate_percent": "5.50",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "6 months < 9 months",
+      "tenure_min_days": 183,
+      "tenure_max_days": 274,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 9,
+      "rate_percent": "5.75",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "9 months < 1 year",
+      "tenure_min_days": 3285,
+      "tenure_max_days": 365,
+      "deposit_slab": "<3 crore",
+      "sort_order": 10,
+      "rate_percent": "5.75",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "9 months < 1 year",
+      "tenure_min_days": 3285,
+      "tenure_max_days": 365,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 10,
+      "rate_percent": "6.00",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "1 year – 1 year 10 days",
+      "tenure_min_days": 365,
+      "tenure_max_days": 365,
+      "deposit_slab": "<3 crore",
+      "sort_order": 11,
+      "rate_percent": "6.25",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "1 year – 1 year 10 days",
+      "tenure_min_days": 365,
+      "tenure_max_days": 365,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 11,
+      "rate_percent": "6.25",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "1 year 11 days < 13 months",
+      "tenure_min_days": 365,
+      "tenure_max_days": 4015,
+      "deposit_slab": "<3 crore",
+      "sort_order": 12,
+      "rate_percent": "6.25",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "1 year 11 days < 13 months",
+      "tenure_min_days": 365,
+      "tenure_max_days": 4015,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 12,
+      "rate_percent": "6.25",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "13 months < 15 months",
+      "tenure_min_days": 396,
+      "tenure_max_days": 457,
+      "deposit_slab": "<3 crore",
+      "sort_order": 13,
+      "rate_percent": "6.25",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "13 months < 15 months",
+      "tenure_min_days": 396,
+      "tenure_max_days": 457,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 13,
+      "rate_percent": "6.25",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "15 months < 18 months",
+      "tenure_min_days": 457,
+      "tenure_max_days": 548,
+      "deposit_slab": "<3 crore",
+      "sort_order": 14,
+      "rate_percent": "6.45",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "15 months < 18 months",
+      "tenure_min_days": 457,
+      "tenure_max_days": 548,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 14,
+      "rate_percent": "6.50",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "18 Months < 2 years",
+      "tenure_min_days": 548,
+      "tenure_max_days": 729,
+      "deposit_slab": "<3 crore",
+      "sort_order": 15,
+      "rate_percent": "6.50",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "18 Months < 2 years",
+      "tenure_min_days": 548,
+      "tenure_max_days": 729,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 15,
+      "rate_percent": "6.60",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "2 years < 3 years",
+      "tenure_min_days": 730,
+      "tenure_max_days": 1095,
+      "deposit_slab": "<3 crore",
+      "sort_order": 16,
+      "rate_percent": "6.50",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "2 years < 3 years",
+      "tenure_min_days": 730,
+      "tenure_max_days": 1095,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 16,
+      "rate_percent": "6.40",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "3 years < 5 years",
+      "tenure_min_days": 1095,
+      "tenure_max_days": 1825,
+      "deposit_slab": "<3 crore",
+      "sort_order": 17,
+      "rate_percent": "6.50",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "3 years < 5 years",
+      "tenure_min_days": 1095,
+      "tenure_max_days": 1825,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 17,
+      "rate_percent": "6.40",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "5 years to 10 years",
+      "tenure_min_days": 1825,
+      "tenure_max_days": 3650,
+      "deposit_slab": "<3 crore",
+      "sort_order": 18,
+      "rate_percent": "6.50",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "5 years to 10 years",
+      "tenure_min_days": 1825,
+      "tenure_max_days": 3650,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 18,
+      "rate_percent": "6.40",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "30 – 45 days",
+      "tenure_min_days": 30,
+      "tenure_max_days": 45,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 19,
+      "rate_percent": "4.50",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "46 – 60 days",
+      "tenure_min_days": 46,
+      "tenure_max_days": 60,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 20,
+      "rate_percent": "4.75",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "61 days - 87 days",
+      "tenure_min_days": 61,
+      "tenure_max_days": 87,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 21,
+      "rate_percent": "5.00",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "88 days – 3 months 24 days",
+      "tenure_min_days": 2678,
+      "tenure_max_days": 91,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 22,
+      "rate_percent": "5.95",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "3 months 25 days < 4 months",
+      "tenure_min_days": 91,
+      "tenure_max_days": 761,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 23,
+      "rate_percent": "5.95",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "4 months < 6 months",
+      "tenure_min_days": 122,
+      "tenure_max_days": 183,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 24,
+      "rate_percent": "5.95",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "6 months < 9 months",
+      "tenure_min_days": 183,
+      "tenure_max_days": 274,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 25,
+      "rate_percent": "6.15",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "9 months < 1 year",
+      "tenure_min_days": 3285,
+      "tenure_max_days": 365,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 26,
+      "rate_percent": "6.20",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "1 year – 1 year 10 days",
+      "tenure_min_days": 365,
+      "tenure_max_days": 365,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 27,
+      "rate_percent": "6.95",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "1 year 11 days < 13 months",
+      "tenure_min_days": 365,
+      "tenure_max_days": 4015,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 28,
+      "rate_percent": "6.95",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "13 months < 15 months",
+      "tenure_min_days": 396,
+      "tenure_max_days": 457,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 29,
+      "rate_percent": "6.95",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "15 months < 18 months",
+      "tenure_min_days": 457,
+      "tenure_max_days": 548,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 30,
+      "rate_percent": "6.85",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "18 Months < 2 years",
+      "tenure_min_days": 548,
+      "tenure_max_days": 729,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 31,
+      "rate_percent": "6.85",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "2 years < 3 years",
+      "tenure_min_days": 730,
+      "tenure_max_days": 1095,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 32,
+      "rate_percent": "6.60",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "3 years < 5 years",
+      "tenure_min_days": 1095,
+      "tenure_max_days": 1825,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 33,
+      "rate_percent": "6.60",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "5 years to 10 years",
+      "tenure_min_days": 1825,
+      "tenure_max_days": 3650,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 34,
+      "rate_percent": "6.60",
+      "source_url": "https://www.axis.bank.in/deposits/fixed-deposits/fd-interest-rates"
+    }
+  ]
+}

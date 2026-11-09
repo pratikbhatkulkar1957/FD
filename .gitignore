@@ -6,3 +6,7 @@ __pycache__/
 data/scrapes/
 data/*.xlsx
 *.log
+FD_Rates_Code_Explanation.pdf
+FlameGraph-master/
+generate_code_guide_pdf.py
+profile.svg

@@ -1,0 +1,488 @@
+{
+  "bank_slug": "cub",
+  "bank_name": "City Union Bank",
+  "scraped_at": "2026-07-18T07:01:01.409942+00:00",
+  "error": null,
+  "rates": [
+    {
+      "fd_type": "callable",
+      "tenure_label": "7 days to 14 days",
+      "tenure_min_days": 7,
+      "tenure_max_days": 14,
+      "deposit_slab": "<3 crore",
+      "sort_order": 1,
+      "rate_percent": "4.00",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "7 days to 14 days",
+      "tenure_min_days": 7,
+      "tenure_max_days": 14,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 1,
+      "rate_percent": "4.00",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "15 days to 45 days",
+      "tenure_min_days": 15,
+      "tenure_max_days": 45,
+      "deposit_slab": "<3 crore",
+      "sort_order": 2,
+      "rate_percent": "4.25",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "15 days to 45 days",
+      "tenure_min_days": 15,
+      "tenure_max_days": 45,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 2,
+      "rate_percent": "4.25",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "46 days to 90 days",
+      "tenure_min_days": 46,
+      "tenure_max_days": 90,
+      "deposit_slab": "<3 crore",
+      "sort_order": 3,
+      "rate_percent": "4.75",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "46 days to 90 days",
+      "tenure_min_days": 46,
+      "tenure_max_days": 90,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 3,
+      "rate_percent": "5.75",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "91 days to 180 days",
+      "tenure_min_days": 91,
+      "tenure_max_days": 180,
+      "deposit_slab": "<3 crore",
+      "sort_order": 4,
+      "rate_percent": "5.75",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "91 days to 180 days",
+      "tenure_min_days": 91,
+      "tenure_max_days": 180,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 4,
+      "rate_percent": "5.75",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "181 days to 270 days",
+      "tenure_min_days": 181,
+      "tenure_max_days": 270,
+      "deposit_slab": "<3 crore",
+      "sort_order": 5,
+      "rate_percent": "6.00",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "181 days to 270 days",
+      "tenure_min_days": 181,
+      "tenure_max_days": 270,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 5,
+      "rate_percent": "6.25",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "271 days to 364 days",
+      "tenure_min_days": 271,
+      "tenure_max_days": 364,
+      "deposit_slab": "<3 crore",
+      "sort_order": 6,
+      "rate_percent": "6.25",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "271 days to 364 days",
+      "tenure_min_days": 271,
+      "tenure_max_days": 364,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 6,
+      "rate_percent": "6.90",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "365 days to 443 days",
+      "tenure_min_days": 365,
+      "tenure_max_days": 443,
+      "deposit_slab": "<3 crore",
+      "sort_order": 7,
+      "rate_percent": "6.65",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "365 days to 443 days",
+      "tenure_min_days": 365,
+      "tenure_max_days": 443,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 7,
+      "rate_percent": "7.50",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "444 days",
+      "tenure_min_days": 444,
+      "tenure_max_days": 444,
+      "deposit_slab": "<3 crore",
+      "sort_order": 8,
+      "rate_percent": "7.10",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "444 days",
+      "tenure_min_days": 444,
+      "tenure_max_days": 444,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 8,
+      "rate_percent": "7.20",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "445 days to 554 days",
+      "tenure_min_days": 445,
+      "tenure_max_days": 554,
+      "deposit_slab": "<3 crore",
+      "sort_order": 9,
+      "rate_percent": "7.15",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "445 days to 554 days",
+      "tenure_min_days": 445,
+      "tenure_max_days": 554,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 9,
+      "rate_percent": "7.20",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "555 days",
+      "tenure_min_days": 555,
+      "tenure_max_days": 555,
+      "deposit_slab": "<3 crore",
+      "sort_order": 10,
+      "rate_percent": "7.25",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "555 days",
+      "tenure_min_days": 555,
+      "tenure_max_days": 555,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 10,
+      "rate_percent": "6.65",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "556 days to 3 years",
+      "tenure_min_days": 556,
+      "tenure_max_days": 1095,
+      "deposit_slab": "<3 crore",
+      "sort_order": 11,
+      "rate_percent": "6.50",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "556 days to 3 years",
+      "tenure_min_days": 556,
+      "tenure_max_days": 1095,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 11,
+      "rate_percent": "6.50",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "Over 3 Years upto 5 Years",
+      "tenure_min_days": 1096,
+      "tenure_max_days": 1825,
+      "deposit_slab": "<3 crore",
+      "sort_order": 12,
+      "rate_percent": "6.55",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "callable",
+      "tenure_label": "Over 5 Years upto 10 Years",
+      "tenure_min_days": 1825,
+      "tenure_max_days": 3650,
+      "deposit_slab": "<3 crore",
+      "sort_order": 13,
+      "rate_percent": "6.25",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "7 days to 14 days",
+      "tenure_min_days": 7,
+      "tenure_max_days": 14,
+      "deposit_slab": "<3 crore",
+      "sort_order": 14,
+      "rate_percent": "4.00",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "7 days to 14 days",
+      "tenure_min_days": 7,
+      "tenure_max_days": 14,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 14,
+      "rate_percent": "4.50",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "15 days to 45 days",
+      "tenure_min_days": 15,
+      "tenure_max_days": 45,
+      "deposit_slab": "<3 crore",
+      "sort_order": 15,
+      "rate_percent": "4.25",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "15 days to 45 days",
+      "tenure_min_days": 15,
+      "tenure_max_days": 45,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 15,
+      "rate_percent": "4.50",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "46 days to 90 days",
+      "tenure_min_days": 46,
+      "tenure_max_days": 90,
+      "deposit_slab": "<3 crore",
+      "sort_order": 16,
+      "rate_percent": "4.75",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "46 days to 90 days",
+      "tenure_min_days": 46,
+      "tenure_max_days": 90,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 16,
+      "rate_percent": "5.80",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "91 days to 180 days",
+      "tenure_min_days": 91,
+      "tenure_max_days": 180,
+      "deposit_slab": "<3 crore",
+      "sort_order": 17,
+      "rate_percent": "5.80",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "91 days to 180 days",
+      "tenure_min_days": 91,
+      "tenure_max_days": 180,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 17,
+      "rate_percent": "5.80",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "181 days to 270 days",
+      "tenure_min_days": 181,
+      "tenure_max_days": 270,
+      "deposit_slab": "<3 crore",
+      "sort_order": 18,
+      "rate_percent": "6.10",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "181 days to 270 days",
+      "tenure_min_days": 181,
+      "tenure_max_days": 270,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 18,
+      "rate_percent": "6.30",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "271 days to 364 days",
+      "tenure_min_days": 271,
+      "tenure_max_days": 364,
+      "deposit_slab": "<3 crore",
+      "sort_order": 19,
+      "rate_percent": "6.30",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "271 days to 364 days",
+      "tenure_min_days": 271,
+      "tenure_max_days": 364,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 19,
+      "rate_percent": "6.95",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "365 days to 443 days",
+      "tenure_min_days": 365,
+      "tenure_max_days": 443,
+      "deposit_slab": "<3 crore",
+      "sort_order": 20,
+      "rate_percent": "6.70",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "365 days to 443 days",
+      "tenure_min_days": 365,
+      "tenure_max_days": 443,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 20,
+      "rate_percent": "7.70",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "444 days",
+      "tenure_min_days": 444,
+      "tenure_max_days": 444,
+      "deposit_slab": "<3 crore",
+      "sort_order": 21,
+      "rate_percent": "7.15",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "444 days",
+      "tenure_min_days": 444,
+      "tenure_max_days": 444,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 21,
+      "rate_percent": "7.25",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "445 days to 554 days",
+      "tenure_min_days": 445,
+      "tenure_max_days": 554,
+      "deposit_slab": "<3 crore",
+      "sort_order": 22,
+      "rate_percent": "7.20",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "445 days to 554 days",
+      "tenure_min_days": 445,
+      "tenure_max_days": 554,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 22,
+      "rate_percent": "7.25",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "555 days",
+      "tenure_min_days": 555,
+      "tenure_max_days": 555,
+      "deposit_slab": "<3 crore",
+      "sort_order": 23,
+      "rate_percent": "7.30",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "555 days",
+      "tenure_min_days": 555,
+      "tenure_max_days": 555,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 23,
+      "rate_percent": "6.70",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "556 days to 3 years",
+      "tenure_min_days": 556,
+      "tenure_max_days": 1095,
+      "deposit_slab": "<3 crore",
+      "sort_order": 24,
+      "rate_percent": "6.50",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "556 days to 3 years",
+      "tenure_min_days": 556,
+      "tenure_max_days": 1095,
+      "deposit_slab": "3 Cr < 5 Cr",
+      "sort_order": 24,
+      "rate_percent": "6.55",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "Over 3 Years upto 5 Years",
+      "tenure_min_days": 1096,
+      "tenure_max_days": 1825,
+      "deposit_slab": "<3 crore",
+      "sort_order": 25,
+      "rate_percent": "6.55",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    },
+    {
+      "fd_type": "non_callable",
+      "tenure_label": "Over 5 Years upto 10 Years",
+      "tenure_min_days": 1825,
+      "tenure_max_days": 3650,
+      "deposit_slab": "<3 crore",
+      "sort_order": 26,
+      "rate_percent": "6.25",
+      "source_url": "https://cityunionbank.bank.in/deposit-interest-rate"
+    }
+  ]
+}

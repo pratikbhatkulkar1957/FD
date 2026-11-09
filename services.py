@@ -50,7 +50,7 @@ def scrape_banks(bank_slugs: list[str] | None = None) -> list[ScrapeResult]:
     For each bank:
       1. Clear old fd_rates rows
       2. Fetch live rates from the official site
-      3. Upsert into MySQL + write history on changes
+    3. Upsert into PostgreSQL + write history on changes
       4. Archive JSON under data/scrapes/<timestamp>/
     On failure, clears that bank's rates so stale data is not shown.
     """

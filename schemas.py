@@ -2,7 +2,7 @@
 Pydantic models for API requests/responses and scraped rate points.
 
 These define the shape of data returned by FastAPI JSON endpoints
-and the objects written into MySQL after a scrape.
+and the objects written into PostgreSQL after a scrape.
 """
 
 from datetime import datetime

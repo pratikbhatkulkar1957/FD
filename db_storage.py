@@ -1,8 +1,8 @@
 """
-MySQL storage layer for banks, current FD rates, and rate history.
+PostgreSQL storage layer for banks, current FD rates, and rate history.
 
 Important: uses ONE shared connection (_conn) re-used across requests.
-Hostinger shared MySQL limits connections-per-hour, so we must not
+Hosted database plans may limit connections, so we must not
 open a new connection for every query.
 """
 
@@ -16,18 +16,18 @@ from datetime import datetime, timezone
 from decimal import Decimal
 from pathlib import Path
 
-import pymysql
+import psycopg
 from openpyxl import Workbook
-from pymysql.cursors import DictCursor
+from psycopg.rows import dict_row
 
 from bank_data import BANKS
 from config import settings
 
 logger = logging.getLogger(__name__)
 
-# Thread-safe single-connection pool (size = 1) for Hostinger limits.
+# Thread-safe single-connection pool (size = 1) for hosted database limits.
 _lock = threading.Lock()
-_conn: pymysql.Connection | None = None
+_conn: psycopg.Connection | None = None
 _SCHEMA_PATH = Path(__file__).resolve().parent / "schema.sql"
 
 
@@ -89,36 +89,34 @@ def _parse_datetime(value) -> datetime | None:
     return datetime.fromisoformat(str(value))
 
 
-def _validate_mysql_settings() -> None:
+def _validate_postgres_settings() -> None:
     missing = [
         name
         for name, value in [
-            ("MYSQL_HOST", settings.MYSQL_HOST),
-            ("MYSQL_USER", settings.MYSQL_USER),
-            ("MYSQL_PASSWORD", settings.MYSQL_PASSWORD),
-            ("MYSQL_DATABASE", settings.MYSQL_DATABASE),
+            ("POSTGRES_HOST", settings.POSTGRES_HOST),
+            ("POSTGRES_USER", settings.POSTGRES_USER),
+            ("POSTGRES_PASSWORD", settings.POSTGRES_PASSWORD),
+            ("POSTGRES_DATABASE", settings.POSTGRES_DATABASE),
         ]
         if not value
     ]
     if missing:
         names = ", ".join(missing)
-        raise RuntimeError(f"Missing MySQL settings in .env: {names}")
+        raise RuntimeError(f"Missing PostgreSQL settings in .env: {names}")
 
 
-def _new_connection() -> pymysql.Connection:
-    _validate_mysql_settings()
-    return pymysql.connect(
-        host=settings.MYSQL_HOST,
-        port=settings.MYSQL_PORT,
-        user=settings.MYSQL_USER,
-        password=settings.MYSQL_PASSWORD,
-        database=settings.MYSQL_DATABASE,
-        charset="utf8mb4",
-        cursorclass=DictCursor,
+def _new_connection() -> psycopg.Connection:
+    _validate_postgres_settings()
+    return psycopg.connect(
+        host=settings.POSTGRES_HOST,
+        port=settings.POSTGRES_PORT,
+        user=settings.POSTGRES_USER,
+        password=settings.POSTGRES_PASSWORD,
+        dbname=settings.POSTGRES_DATABASE,
+        sslmode=settings.POSTGRES_SSLMODE,
+        row_factory=dict_row,
         autocommit=False,
         connect_timeout=20,
-        read_timeout=60,
-        write_timeout=60,
     )
 
 
@@ -132,14 +130,15 @@ def _reset_connection() -> None:
         _conn = None
 
 
-def _get_connection() -> pymysql.Connection:
-    """Reuse one MySQL connection per process to stay under Hostinger limits."""
+def _get_connection() -> psycopg.Connection:
+    """Reuse one PostgreSQL connection per process."""
     global _conn
     if _conn is None:
         _conn = _new_connection()
         return _conn
     try:
-        _conn.ping(reconnect=True)
+        _conn.execute("SELECT 1")
+        _conn.rollback()
     except Exception:
         _reset_connection()
         _conn = _new_connection()
@@ -153,7 +152,7 @@ def _db():
         conn = _get_connection()
         try:
             yield conn
-        except pymysql.err.OperationalError:
+        except psycopg.OperationalError:
             _reset_connection()
             raise
         except Exception:
@@ -168,7 +167,7 @@ def close_db() -> None:
 
 
 def init_db() -> None:
-    """Apply the MySQL schema to the configured Hostinger database."""
+    """Apply the PostgreSQL schema to the configured database."""
     schema_sql = _SCHEMA_PATH.read_text(encoding="utf-8")
     statements = [s.strip() for s in schema_sql.split(";") if s.strip()]
 
@@ -180,7 +179,7 @@ def init_db() -> None:
 
 
 def get_banks() -> list[BankRow]:
-    """Load all banks currently stored in MySQL."""
+    """Load all banks currently stored in PostgreSQL."""
     with _db() as conn:
         with conn.cursor() as cur:
             cur.execute("SELECT slug, name FROM banks ORDER BY name")
@@ -199,8 +198,8 @@ def ensure_banks_exist(bank_slugs: list[str]) -> None:
                     """
                     INSERT INTO banks (slug, name)
                     VALUES (%s, %s)
-                    ON DUPLICATE KEY UPDATE
-                        name = VALUES(name),
+                    ON CONFLICT (slug) DO UPDATE SET
+                        name = EXCLUDED.name,
                         updated_at = CURRENT_TIMESTAMP
                     """,
                     (slug, name),
@@ -435,7 +434,7 @@ def get_last_updated() -> datetime | None:
 
 
 def export_to_excel(output_path: Path | None = None) -> Path:
-    """Export current MySQL data to an Excel workbook for download."""
+    """Export current PostgreSQL data to an Excel workbook for download."""
     path = output_path or Path(settings.EXCEL_EXPORT_FILE)
     path.parent.mkdir(parents=True, exist_ok=True)
 

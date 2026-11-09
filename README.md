@@ -1,8 +1,8 @@
-# FD Rates (MySQL)
+# FD Rates (PostgreSQL)
 
 FastAPI app to scrape and compare Fixed Deposit rates across Indian banks.
 
-Data is stored in **Hostinger MySQL**. Each scrape also saves JSON files under `data/scrapes/<timestamp>/`.
+Data is stored in PostgreSQL. Each scrape also saves JSON files under `data/scrapes/<timestamp>/`.
 
 ## Run
 
@@ -15,8 +15,8 @@ Open: http://localhost:8000/
 
 ## Setup
 
-1. Copy `.env.example` to `.env` and add Hostinger MySQL credentials.
-2. Run `schema.sql` in phpMyAdmin (creates `banks`, `fd_rates`, `rate_history`).
+1. Set `POSTGRES_HOST`, `POSTGRES_PORT`, `POSTGRES_USER`, `POSTGRES_PASSWORD`, and `POSTGRES_DATABASE` in `.env`.
+2. Run `schema.sql` against your PostgreSQL database (creates `banks`, `fd_rates`, `rate_history`).
 3. Start the server and click **Refresh Rates**.
 
 ## Scrape folders
@@ -36,8 +36,8 @@ data/scrapes/2026-07-11_12-45-30/
 | File | Purpose |
 |------|---------|
 | `main.py` | FastAPI app and routes |
-| `db_storage.py` | MySQL read/write |
+| `db_storage.py` | PostgreSQL read/write |
 | `services.py` | Scrape orchestration and tables |
 | `rate_scrapers.py` | Bank website scrapers |
 | `scrape_archive.py` | Timestamped scrape folder storage |
-| `schema.sql` | MySQL table definitions |
+| `schema.sql` | PostgreSQL table definitions |

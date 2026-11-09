@@ -109,7 +109,7 @@ def build():
     pdf.cell(
         0,
         6,
-        "Stack: FastAPI + Jinja2 + MySQL (Hostinger) + live bank scrapers",
+        "Stack: FastAPI + Jinja2 + PostgreSQL + live bank scrapers",
         align="C",
         new_x="LMARGIN",
         new_y="NEXT",
@@ -129,7 +129,7 @@ def build():
     add_p(
         pdf,
         "This app scrapes Fixed Deposit (FD) interest rates from official Indian bank "
-        "websites, stores them in MySQL, archives each scrape as JSON files, and shows "
+        "websites, stores them in PostgreSQL, archives each scrape as JSON files, and shows "
         "them on a CUB-style dashboard. You can also compare best rates across banks "
         "and export CSV/Excel.",
     )
@@ -157,7 +157,7 @@ def build():
         "  -> main.py (FastAPI routes)\n"
         "    -> services.py (business logic / table building)\n"
         "      -> scrapers.py + rate_scrapers.py (fetch from bank sites)\n"
-        "      -> db_storage.py (save/read MySQL)\n"
+        "      -> db_storage.py (save/read PostgreSQL)\n"
         "      -> scrape_archive.py (save JSON under data/scrapes/)\n"
         "  <- templates/*.html (HTML response)",
     )
@@ -169,19 +169,19 @@ def build():
     add_bullet(pdf, "services.py - scrape orchestration + dashboard compare logic")
     add_bullet(pdf, "scrapers.py - converts raw scraper dicts into RatePoint objects")
     add_bullet(pdf, "rate_scrapers.py - one live scraper per bank")
-    add_bullet(pdf, "db_storage.py - MySQL connection and queries")
+    add_bullet(pdf, "db_storage.py - PostgreSQL connection and queries")
     add_bullet(pdf, "scrape_archive.py - timestamped JSON archives")
-    add_bullet(pdf, "schema.sql - MySQL table definitions")
+    add_bullet(pdf, "schema.sql - PostgreSQL table definitions")
     add_bullet(pdf, "templates/ - Jinja2 HTML pages")
 
     # 3. config
     add_title(pdf, "3. config.py - Settings")
     add_p(
         pdf,
-        "Uses pydantic-settings. Values come from .env (MYSQL_HOST, MYSQL_USER, "
-        "MYSQL_PASSWORD, MYSQL_DATABASE, etc.). Important flags:",
+        "Uses pydantic-settings. Values come from .env (POSTGRES_HOST, POSTGRES_USER, "
+        "POSTGRES_PASSWORD, POSTGRES_DATABASE, etc.). Important flags:",
     )
-    add_bullet(pdf, "INIT_DB_ON_STARTUP=false - do not run schema every start (Hostinger limits)")
+    add_bullet(pdf, "INIT_DB_ON_STARTUP=false - do not run schema on every start")
     add_bullet(pdf, "SCRAPE_ON_STARTUP=false - scrape only when you click Refresh")
     add_bullet(pdf, "SCRAPES_DIR - folder for archived scrape sessions")
     add_bullet(pdf, "EXCEL_EXPORT_FILE - where Excel export is written")
@@ -206,7 +206,7 @@ def build():
     add_bullet(
         pdf,
         "RatePoint - one scraped cell (fd_type, tenure, slab, rate, source_url). "
-        "Used when writing into MySQL.",
+        "Used when writing into PostgreSQL.",
     )
     add_bullet(pdf, "RateOut / HistoryOut / BestRateOut - JSON response models")
 
@@ -229,11 +229,11 @@ def build():
     )
 
     # 7. db_storage
-    add_title(pdf, "7. db_storage.py - MySQL layer")
+    add_title(pdf, "7. db_storage.py - PostgreSQL layer")
     add_p(
         pdf,
-        "All database access goes through this file. Hostinger shared MySQL has a "
-        "strict connection-per-hour limit, so the code keeps ONE reused connection "
+        "All database access goes through this file. Hosted database plans may have "
+        "connection limits, so the code keeps ONE reused connection "
         "(_get_connection) protected by a threading lock.",
     )
     add_h2(pdf, "Key functions")
@@ -305,7 +305,7 @@ def build():
         pdf,
         "Every scrape creates data/scrapes/<timestamp>/. Each bank gets rates.json. "
         "summary.json lists success/fail and points_seen. Useful for debugging without "
-        "querying MySQL.",
+        "querying PostgreSQL.",
     )
 
     # 11. services
@@ -313,7 +313,7 @@ def build():
     add_h3(pdf, "scrape_banks()")
     add_p(
         pdf,
-        "1) Ensure banks exist in MySQL. 2) Create archive session. 3) For each bank: "
+        "1) Ensure banks exist in PostgreSQL. 2) Create archive session. 3) For each bank: "
         "clear old rates, fetch live rates, upsert + history, save JSON. 4) On failure, "
         "clear that bank's rates and store the error. 5) Write summary.json.",
     )
@@ -334,7 +334,7 @@ def build():
     add_title(pdf, "12. main.py - FastAPI routes")
     add_h2(pdf, "Lifecycle")
     add_bullet(pdf, "startup - optional init_db / scrape_banks (both off by default)")
-    add_bullet(pdf, "shutdown - close MySQL connection")
+    add_bullet(pdf, "shutdown - close PostgreSQL connection")
     add_h2(pdf, "Pages")
     add_bullet(pdf, "GET / - dashboard (optional ?bank_slug=hdfc)")
     add_bullet(pdf, "GET /compare - best-rate comparison (?fd_type=callable|non_callable)")
@@ -360,7 +360,7 @@ def build():
     add_bullet(pdf, "db_storage clears old rows for that bank, inserts new rates, logs changes")
     add_bullet(pdf, "JSON archived under data/scrapes/<timestamp>/")
     add_bullet(pdf, "Redirect to /?scraped=1")
-    add_bullet(pdf, "dashboard reads MySQL via get_dashboard_data() and renders tables")
+    add_bullet(pdf, "dashboard reads PostgreSQL via get_dashboard_data() and renders tables")
 
     # 15. Run
     add_title(pdf, "15. How to run")
@@ -373,8 +373,8 @@ def build():
     )
     add_p(
         pdf,
-        "Ensure .env has MYSQL_* credentials. Keep INIT_DB_ON_STARTUP=false and "
-        "SCRAPE_ON_STARTUP=false on Hostinger to avoid connection-limit errors. "
+        "Ensure .env has POSTGRES_* credentials. Keep INIT_DB_ON_STARTUP=false and "
+        "SCRAPE_ON_STARTUP=false on hosted plans to avoid connection-limit errors. "
         "Starlette must stay compatible with FastAPI 0.115.5 "
         "(starlette>=0.40,<0.42).",
     )

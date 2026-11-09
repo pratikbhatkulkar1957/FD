@@ -8,7 +8,7 @@ Every Refresh Rates creates:
     axis/rates.json
     ...
 
-Useful for debugging without querying MySQL.
+Useful for debugging without querying PostgreSQL.
 """
 
 from __future__ import annotations

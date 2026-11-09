@@ -3,7 +3,7 @@ App settings loaded from environment variables / .env file.
 
 Usage:
   from config import settings
-  settings.MYSQL_HOST
+    settings.POSTGRES_HOST
 """
 
 from pathlib import Path
@@ -15,31 +15,36 @@ BASE_DIR = Path(__file__).resolve().parent
 
 
 class Settings(BaseSettings):
-    """All tunables for MySQL, scrape behavior, and file paths."""
+    """All tunables for PostgreSQL, scrape behavior, and file paths."""
 
-    MYSQL_HOST: str = Field(
+    POSTGRES_HOST: str = Field(
         default="localhost",
-        description="MySQL host name from Hostinger.",
+        description="PostgreSQL host name.",
     )
 
-    MYSQL_PORT: int = Field(
-        default=3306,
-        description="MySQL server port.",
+    POSTGRES_PORT: int = Field(
+        default=5432,
+        description="PostgreSQL server port.",
     )
 
-    MYSQL_USER: str = Field(
+    POSTGRES_USER: str = Field(
         default="",
-        description="MySQL user name.",
+        description="PostgreSQL user name.",
     )
 
-    MYSQL_PASSWORD: str = Field(
+    POSTGRES_PASSWORD: str = Field(
         default="",
-        description="MySQL password. Keep this only in .env.",
+        description="PostgreSQL password. Keep this only in .env.",
     )
 
-    MYSQL_DATABASE: str = Field(
+    POSTGRES_DATABASE: str = Field(
         default="",
-        description="MySQL database name.",
+        description="PostgreSQL database name.",
+    )
+
+    POSTGRES_SSLMODE: str = Field(
+        default="prefer",
+        description="PostgreSQL SSL mode for hosted database connections.",
     )
 
     SCRAPES_DIR: str = Field(
@@ -57,7 +62,7 @@ class Settings(BaseSettings):
         description="Enable APScheduler background jobs (daily scrapes later).",
     )
 
-    # Keep these false on shared Hostinger plans (connection-per-hour limits).
+    # Keep these false on hosted plans with connection limits.
     INIT_DB_ON_STARTUP: bool = Field(
         default=False,
         description="Run schema migration on app startup (off by default for shared hosting).",
@@ -73,7 +78,11 @@ class Settings(BaseSettings):
         description="Cron expression for daily scrape (when scheduler is enabled).",
     )
 
-    model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8")
+    model_config = SettingsConfigDict(
+        env_file=".env",
+        env_file_encoding="utf-8",
+        extra="ignore",
+    )
 
 
 # Singleton used everywhere else in the project.

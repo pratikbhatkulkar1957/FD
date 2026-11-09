@@ -1,5 +1,5 @@
 """
-Adapter between live scrapers (rate_scrapers.py) and MySQL (RatePoint).
+Adapter between live scrapers (rate_scrapers.py) and PostgreSQL (RatePoint).
 
 Each bank scraper returns rates with the bank's own tenure labels:
   { "callable": { "7 days to 14 days": {"<3 crore": Decimal("4.40"), ...}, ... }, ... }

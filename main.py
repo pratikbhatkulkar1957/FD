@@ -2,7 +2,7 @@
 FastAPI entry point for the FD Rates Tracker.
 
 This file only defines HTTP routes and app lifecycle.
-Business logic lives in services.py; MySQL access lives in db_storage.py.
+Business logic lives in services.py; PostgreSQL access lives in db_storage.py.
 """
 
 import csv
@@ -10,7 +10,7 @@ import io
 import logging
 from decimal import Decimal
 
-import pymysql
+import psycopg
 from fastapi import FastAPI, HTTPException, Query, Request
 from fastapi.responses import FileResponse, HTMLResponse, RedirectResponse, StreamingResponse
 from fastapi.templating import Jinja2Templates
@@ -30,29 +30,29 @@ from services import (
 )
 
 
-app = FastAPI(title="FD Rates (FastAPI + MySQL)")
+app = FastAPI(title="FD Rates (FastAPI + PostgreSQL)")
 templates = Jinja2Templates(directory="templates")
 logger = logging.getLogger(__name__)
 
 
 @app.on_event("startup")
 def _startup() -> None:
-    """Optional DB init / scrape on boot (both off by default for Hostinger)."""
+    """Optional DB init / scrape on boot (both off by default)."""
     try:
         if settings.INIT_DB_ON_STARTUP:
             db_storage.init_db()
         if settings.SCRAPE_ON_STARTUP:
             scrape_banks()
-    except pymysql.err.OperationalError as exc:
-        # App still starts; pages will retry MySQL on the next request.
-        logger.warning("MySQL unavailable at startup (%s). App will retry on next request.", exc)
+    except psycopg.OperationalError as exc:
+        # App still starts; pages will retry PostgreSQL on the next request.
+        logger.warning("PostgreSQL unavailable at startup (%s). App will retry on the next request.", exc)
     except Exception:
         logger.exception("Startup task failed")
 
 
 @app.on_event("shutdown")
 def _shutdown() -> None:
-    """Close the shared MySQL connection cleanly when the server stops."""
+    """Close the shared PostgreSQL connection cleanly when the server stops."""
     db_storage.close_db()
 
 

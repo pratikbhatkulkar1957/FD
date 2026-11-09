@@ -90,6 +90,9 @@ def _parse_datetime(value) -> datetime | None:
 
 
 def _validate_postgres_settings() -> None:
+    if settings.DATABASE_URL:
+        return
+
     missing = [
         name
         for name, value in [
@@ -107,6 +110,18 @@ def _validate_postgres_settings() -> None:
 
 def _new_connection() -> psycopg.Connection:
     _validate_postgres_settings()
+    connection_options = {
+        "row_factory": dict_row,
+        "autocommit": False,
+        "connect_timeout": 20,
+    }
+    if settings.DATABASE_URL:
+        return psycopg.connect(
+            settings.DATABASE_URL,
+            sslmode=settings.POSTGRES_SSLMODE,
+            **connection_options,
+        )
+
     return psycopg.connect(
         host=settings.POSTGRES_HOST,
         port=settings.POSTGRES_PORT,
@@ -114,9 +129,7 @@ def _new_connection() -> psycopg.Connection:
         password=settings.POSTGRES_PASSWORD,
         dbname=settings.POSTGRES_DATABASE,
         sslmode=settings.POSTGRES_SSLMODE,
-        row_factory=dict_row,
-        autocommit=False,
-        connect_timeout=20,
+        **connection_options,
     )
 
 

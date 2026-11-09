@@ -17,6 +17,11 @@ BASE_DIR = Path(__file__).resolve().parent
 class Settings(BaseSettings):
     """All tunables for PostgreSQL, scrape behavior, and file paths."""
 
+    DATABASE_URL: str = Field(
+        default="",
+        description="Optional PostgreSQL connection string; takes precedence over POSTGRES_* fields.",
+    )
+
     POSTGRES_HOST: str = Field(
         default="localhost",
         description="PostgreSQL host name.",

@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: fd-rates-app
+    runtime: python
+    plan: free
+    region: oregon
+    branch: postgres-migration
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.14
+      - key: DATABASE_URL
+        fromDatabase:
+          name: fd-rates-db
+          property: connectionString
+      - key: POSTGRES_SSLMODE
+        value: require
+      - key: INIT_DB_ON_STARTUP
+        value: "true"
+
+databases:
+  - name: fd-rates-db
+    databaseName: fd_rates
+    user: fd_rates
+    plan: free
+    region: oregon

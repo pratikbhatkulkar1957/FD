@@ -19,6 +19,12 @@ Open: http://localhost:8000/
 2. Run `schema.sql` against your PostgreSQL database (creates `banks`, `fd_rates`, `rate_history`).
 3. Start the server and click **Refresh Rates**.
 
+## Deploy on Render
+
+The `render.yaml` Blueprint creates the web service and PostgreSQL database. Push this file to the `postgres-migration` branch, then create a Blueprint in the Render Dashboard from that branch and apply it. The schema is initialized automatically on startup; click **Refresh Rates** after deployment to populate current rates.
+
+The Blueprint uses free plans for an initial trial. Render's free PostgreSQL databases expire after 30 days and are deleted after the grace period unless upgraded. Scrape archive files are stored on the web service's ephemeral filesystem and can be lost on restart or deploy. Upgrade the database and use persistent storage or external object storage before relying on this deployment for durable data.
+
 ## Scrape folders
 
 Each scrape creates:
